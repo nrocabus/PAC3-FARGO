@@ -1,0 +1,47 @@
+
+
+
+/*CONFIGURACIÓ DEL DISSENY RESPONSIU  
+    MOBILE FIRST  */
+//qqqq
+$color-lletra-fargo: #8d051b;
+$variable3: #000;
+
+body{
+    margin: 0;
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 16px;  
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    background-color: #000;
+    width: 100%;
+    height: 10rem;
+}
+
+main{
+    background-color: $color-lletra-fargo; 
+}
+
+.fargo-typo-sans{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/*CONFIGURACIÓ DEL DISSENY RESPONSIU 
+    ESTILS MODIFICATS PER TABLET  */
+        @media screen and (min-width: 768px ) and (max-width: 992px ) {
+        }
+
+/* CONFIGURACIÓ DEL DISSENY RESPONSIU 
+    ESTILS MODIFICATS PER ESCRIPTORI  */
+        @media screen and (min-width: 992px ){   
+        }
