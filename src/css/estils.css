@@ -1,9 +1,20 @@
 @charset "UTF-8";
 /*CONFIGURACIÓ DEL DISSENY RESPONSIU  
     MOBILE FIRST  */
+ul {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  padding-inline-start: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
 body {
   margin: 0;
   font-family: "Source Sans 3", sans-serif;
+  height: 100vh;
   font-size: 16px;
   display: flex;
   flex-direction: column;
@@ -16,22 +27,241 @@ a {
 }
 
 header {
-  background-color: #000;
   width: 100%;
-  height: 10rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  z-index: 2;
+  position: sticky;
+  top: 0;
+}
+
+.logo {
+  height: 6rem;
+  width: auto;
 }
 
 main {
-  background-color: #8d051b;
+  background-color: #fff;
 }
 
 .fargo-typo-sans {
   font-family: "Open Sans", sans-serif;
+  color: #8d051b;
+  font-weight: 900;
+  letter-spacing: 6rem;
+  margin-right: -6rem;
+  font-size: 3rem;
+}
+
+.fargo-typo-header {
+  font-family: "Open Sans", sans-serif;
+  color: #fff;
+  font-weight: 900;
+  font-size: 4rem;
 }
 
 /*CONFIGURACIÓ DEL DISSENY RESPONSIU 
     ESTILS MODIFICATS PER TABLET  */
 /* CONFIGURACIÓ DEL DISSENY RESPONSIU 
     ESTILS MODIFICATS PER ESCRIPTORI  */
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 140rem;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../media/cartell-fargo2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.cover .text-intro {
+  width: 70%;
+  height: 100vh;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 700;
+  text-align: center;
+  font-size: 3rem;
+  letter-spacing: 0.3rem;
+  line-height: 4rem;
+  padding-top: 30rem;
+  box-sizing: border-box;
+}
+@keyframes fletxa-cover-bottom {
+  0% {
+    opacity: 0.9;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+.cover .cover-bottom {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+  line-height: 5rem;
+  color: #fff;
+  animation: fletxa-cover-bottom 3s infinite;
+  font-size: 5rem;
+  text-align: center;
+}
+.cover .t_intro {
+  color: #ffffff;
+  opacity: 0;
+  transition: 2s;
+}
+.cover .t_intro_t {
+  opacity: 0;
+  transition: 4s;
+}
+.cover .mes-info {
+  width: 100%;
+  height: 10rem;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+#open-menu-header {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+#close-menu-header {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #ddd;
+}
+
+#menu-lateral-mb {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 0%;
+  transition: 0.5s;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 10px 0px 200px 6px;
+  z-index: 999;
+}
+
+.item-head {
+  white-space: nowrap;
+  padding: 1.5rem;
+}
+
+.item-menu-lat {
+  padding: 4rem;
+  font-size: 4rem;
+  min-width: 10rem;
+  height: 4rem;
+  border-bottom: solid 1px #ddd;
+  white-space: nowrap;
+}
+
+.fargo-typo-cover {
+  font-family: "Open Sans", sans-serif;
+  color: #350000;
+  font-weight: 900;
+  letter-spacing: 6rem;
+  margin-right: -6rem;
+  font-size: 3rem;
+}
+
+.carta-personatge {
+  box-sizing: border-box;
+  width: 90%;
+  background-color: #f1f1f1;
+  min-height: 10rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem;
+  display: flex;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.carta-personatge .th-foto-personatge {
+  width: 5rem;
+  height: 5rem;
+  border: solid 1px;
+  border-radius: 50%;
+  margin-right: 0.3rem;
+}
+.carta-personatge .info-personatge {
+  width: 70%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.3rem;
+}
+.carta-personatge .nom-personatge {
+  font-weight: 700;
+}
+.carta-personatge .descripcio-personatge {
+  font-size: 0.8rem;
+}
+
+.menu-temporades {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+.menu-temporades li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.menu-temporades p {
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+.menu-temporades .item-temporada {
+  width: 100%;
+  aspect-ratio: 4/3;
+}
+.menu-temporades .i_t_info {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.menu-temporades .i_t_cast {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+.menu-temporades .temp1 {
+  background-image: url(../media/temp1.webp);
+  background-size: cover;
+}
+.menu-temporades .temp2 {
+  background-image: url(../media/temp2.webp);
+  background-size: cover;
+}
+.menu-temporades .temp3 {
+  background-image: url(../media/temp3.webp);
+  background-size: cover;
+}
+.menu-temporades .temp4 {
+  background-image: url(../media/temp4.webp);
+  background-size: cover;
+}
+.menu-temporades .temp5 {
+  background-image: url(../media/temp5.jpg);
+  background-size: cover;
+}
 
 /*# sourceMappingURL=estils.css.map */

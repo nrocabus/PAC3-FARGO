@@ -1,0 +1,100 @@
+
+
+
+.carta-personatge{
+    box-sizing: border-box;
+    width: 90%;
+    background-color: #f1f1f1;
+    min-height: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    display: flex;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+
+    .th-foto-personatge{
+        width: 5rem;
+        height: 5rem;
+        border:solid 1px;
+        border-radius: 50%;
+        margin-right: 0.3rem;
+    }
+    .info-personatge{
+        width: 70%;
+        height:100%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 0.3rem;
+    }
+    .nom-personatge{
+        font-weight: 700;
+    }
+    .descripcio-personatge{
+        font-size: 0.8rem;
+    }
+}
+
+.menu-temporades{
+    width:90%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; 
+    flex-direction:column;
+
+    li{
+        margin-top:.5rem;
+        margin-bottom:.5rem;
+    }
+
+    p{
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+
+    .item-temporada{
+        width: 100%;
+        aspect-ratio: 4/3;
+    }
+    
+    .i_t_info{
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+    .i_t_cast{
+        box-sizing: border-box;
+        padding: 1rem;
+    }
+
+    .temp1{
+        background-image: url(../media/temp1.webp);
+        background-size: cover;
+    }
+    .temp2{
+        background-image: url(../media/temp2.webp);
+        background-size: cover;
+    }
+    .temp3{
+        background-image: url(../media/temp3.webp);
+        background-size: cover;
+    }
+    .temp4{
+        background-image: url(../media/temp4.webp);
+        background-size: cover;
+    }
+    .temp5{
+        background-image: url(../media/temp5.jpg);
+        background-size: cover;
+    }
+
+}
+
+
+// temp1
+// i_t_temp
+// i_t_info
+// i_t_cast
