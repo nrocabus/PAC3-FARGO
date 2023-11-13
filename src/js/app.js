@@ -1,5 +1,5 @@
-
-
+// notari -> 938594259 -> marta; firmar l'acta. 
+// 690741946 david MediaRecorder
 
 function canviCover(num){
 

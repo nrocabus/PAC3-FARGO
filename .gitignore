@@ -2,3 +2,5 @@
 dist/
 node_modules/
 img-no-utilitzades/
+src/css/estils.css
+src/css/estils.css.map

@@ -9,7 +9,8 @@
     "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
-    "build": "npm-run-all clean parcel:build",
+    "build": "npm-run-all clean sass-build parcel:build",
+    "sass-build": "npx sass src/css/scss/estils.scss src/css/estils.css",
     "start-sass": "npx sass --watch src/css/scss/estils.scss src/css/estils.css",
     "parcel-sass": "npm-run-all --parallel start start-sass"
   },
