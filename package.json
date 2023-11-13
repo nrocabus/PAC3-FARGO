@@ -9,12 +9,13 @@
     "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
+    "sass-dev": "sass --watch --update src/css/scss/estils.scss src/css/estils.css",
+    "sass-prod": "sass --no-source-map src/css/scss/estils.scss src/css/estils.css",
     "build": "npm-run-all clean sass-prod parcel:build",
     "sass-build": "npx sass src/css/scss/estils.scss src/css/estils.css",
     "start-sass": "npx sass --watch src/css/scss/estils.scss src/css/estils.css",
-    "parcel-sass": "npm-run-all --parallel start start-sass",
-    "sass-dev": "sass --watch --update src/css/scss/estils.scss src/css/estils.css",
-    "sass-prod": "sass --no-source-map src/css/scss/estils.scss src/css/estils.css"
+    "parcel-sass": "npm-run-all --parallel start start-sass"
+    
   },
   "keywords": [],
   "author": "",
