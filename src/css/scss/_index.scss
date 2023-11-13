@@ -29,16 +29,6 @@ $tempsAnim: 4.5s;
     height: 100vh;
 
 }
-.cover-fons{
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    background-image: url(../media/cover-ma.jpg);
-    background-size: cover;
-    filter: blur(.5rem);
-    -webkit-filter: blur(.5rem);
-    z-index: -1;
-}
 
 .cover-index{
     background-image: url(../media/cover-ma.jpg);

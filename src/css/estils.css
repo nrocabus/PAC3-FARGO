@@ -88,13 +88,19 @@ footer div {
   font-size: 0.8rem;
 }
 
-/* Dropdown button on hover & focus */
-¡ .div-despl {
-  display: none;
-}
-
 .mostra {
   display: block;
+}
+
+.cover-fons {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(../media/cover-ma.jpg);
+  background-size: cover;
+  filter: blur(0.5rem);
+  -webkit-filter: blur(0.5rem);
+  z-index: -1;
 }
 
 .breadcrumb {
@@ -179,17 +185,6 @@ footer div {
 }
 .bd-m {
   height: 100vh;
-}
-
-.cover-fons {
-  position: absolute;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(../media/cover-ma.jpg);
-  background-size: cover;
-  filter: blur(0.5rem);
-  -webkit-filter: blur(0.5rem);
-  z-index: -1;
 }
 
 .cover-index {
