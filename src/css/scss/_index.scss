@@ -1,4 +1,184 @@
 
+
+// .cover1{
+//     background-image: url(../media/cover-ma.jpg);
+//     background-size: cover;
+// }
+// .cover2{
+//     background-image: url(../media/cover9.jpg);
+//     background-size: cover;
+// }
+// .cover3{
+//     background-image: url(../media/cover8.jpg);
+//     background-size: cover;
+// }
+
+$tempsAnim: 4.5s;
+
+@keyframes fadein-text{
+    0% {opacity: 0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+  }
+  @keyframes fadein-text-final{
+      0% {opacity: 0;}
+      100% {opacity:1;}
+    }
+
+.bd-m{
+    height: 100vh;
+
+}
+.cover-fons{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../media/cover-ma.jpg);
+    background-size: cover;
+    filter: blur(.5rem);
+    -webkit-filter: blur(.5rem);
+    z-index: -1;
+}
+
+.cover-index{
+    background-image: url(../media/cover-ma.jpg);
+    background-size: cover;
+    width: 86%;
+    height: 86%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    box-shadow: #909090 0px 0px 20px;
+    max-width: 1250px;
+
+    .menu-dret{
+        background-color: #fff;
+        width: 30%;
+        height: 100%;
+        float: right;
+        right: 0;
+        display:flex;
+        align-items:center;
+        ul{
+            width: 100%;
+            li{
+                width: 100%;
+                position: relative;
+                color: #aaa;
+                height: 4rem;
+                display: flex;
+                align-items: center;
+                box-sizing: border-box;
+                padding-left: 2rem;
+                text-transform: uppercase;
+                font-size:.7rem;
+                font-weight: bold;
+                padding-bottom: 0.2rem;
+                padding-top: 0.2rem;
+                letter-spacing: .1rem;
+
+                &:not(:last-child){
+                    border-bottom: solid 1px #909090;
+                }
+                img{
+                    height:70%;
+                    aspect-ratio: 1;
+                    border-radius:50%;
+                    filter:grayscale(1);
+                    opacity: .5;
+                    margin-right:.3rem;
+                }
+                &:hover{
+                    border-left: solid 3px #ddd;
+                    color: #000;
+
+                    img{
+                        opacity: 1;
+                    }
+                }
+            }
+            
+            .detall{
+                justify-content: flex-start;
+            }
+        }
+        
+    }
+    
+        .text-i{
+            opacity:0;
+            width: 70%;
+            text-align:center;
+            letter-spacing: .05rem;;
+            position: absolute;
+            top: 60%;
+            //left: 23%; 
+            //max-width: 40%;
+            text-shadow: #fff 1px 0 10px, #fff 1px 0 10px;
+        }
+        .text1{
+            content: "THIS IS A TRUE STORY.";
+            
+            animation-name: fadein-text;
+            animation-duration: $tempsAnim;
+            animation-delay: 0s;
+        }
+        
+        .text1-true{
+            content: "THIS IS A TRUE STORY.";
+            font-weight: bold;
+            animation-name: fadein-text;
+            animation-duration: $tempsAnim+1;
+            animation-delay: 0s;
+        } 
+        .hide{
+                visibility: hidden;
+            }
+        .text2{
+            content: "At the request of the survivors, the names has been changed.";
+            
+            animation-name: fadein-text;
+            animation-duration: $tempsAnim;
+            animation-delay: $tempsAnim+.5;
+        }
+        .text3{
+            content: "Out of respect of the dead, the rest has been told exactly as it ocurred.";
+            
+            animation-name: fadein-text;
+            animation-duration: $tempsAnim;
+            animation-delay: $tempsAnim*2+.5;
+        }
+        .text4{
+            content: "FARGO";
+            font-size: 2rem;
+            letter-spacing: 4rem;
+            font-weight:bold;
+            color: rgba(121, 1, 1, 0.8);
+            animation-name: fadein-text-final;
+            animation-duration: $tempsAnim;
+            animation-delay: ($tempsAnim*3+.5);
+            animation-fill-mode: forwards;
+
+        }
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ##########################CANVI TOT
 //MÒBIL
 .cover{
     position: absolute;
@@ -12,26 +192,24 @@
     //flex-direction: column;
     align-items: center;
     justify-content: center;
-    //  background-image: url(../media/cover-gel.png);
-    background-image: url(../media/cartell-fargo2.jpg);
-    // background-image: url(../media/sang-neu-vertical.jpg);  
+     // background-image: url(../media/cover-gel.png);
+    //background-image: url(../media/cartell-fargo2.jpg);
+     background-image: url(../media/sang-neu-vertical.jpg);  
     background-size: cover;
     background-repeat: no-repeat;
     //background-attachment: fixed;
 
     .text-intro{
-        width:70%;
-        height:100vh;
-
-        margin-left: auto;
-        margin-right: auto; 
-        font-weight: 700;
-        text-align:center;
-        font-size: 3rem;
-        letter-spacing: .3rem;
-        line-height: 4rem;
-        padding-top: 30rem;
-        box-sizing: border-box;
+        text-align: center;
+    letter-spacing: .3rem;
+    box-sizing: border-box;
+    width: 70%;
+    margin-top: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
     }
 
     @keyframes fletxa-cover-bottom{
@@ -59,7 +237,7 @@
     }
 
     .t_intro{
-        color:#ffffff;
+        color:#000;
         opacity: 0;
         transition: 2s;
     }
@@ -69,9 +247,20 @@
         transition: 4s;
     }
     .mes-info{
-        width:100%; 
-        height: 10rem;
-        background-color: rgba(255, 255, 255, 0.4);
+        border: 3px solid;
+        border-radius: 3rem;
+        line-height: 5rem;
+        text-align: center;
+        width: 90%;
+        height: 5rem;
+        margin-left: auto;
+        font-weight: bold;
+        margin-right: auto;
+        margin-top: 1rem;
+    }
+
+    .mes-info:first-of-type{
+        margin-top:10rem;
     }
 }
 
@@ -79,9 +268,9 @@
 #open-menu-header{
     width: 4rem;
     height: 4rem;
-    border-radius:50%;
+    border-radius:50%;                  
     background-color: #ddd;
-}
+}   
 
 #close-menu-header{
     width: 4rem;
@@ -125,4 +314,9 @@
     letter-spacing: 6rem;
     margin-right: -6rem;    //no afegir espaciat al final i mantenir text centrat
     font-size: 3rem;
+}
+
+.plat{
+    width: 3rem;
+    height: 3rem;
 }

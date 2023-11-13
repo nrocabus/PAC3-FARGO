@@ -1,58 +1,77 @@
 
-var menu_header = false;
-
-    document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById("open-menu-header").onclick = openMenuHeader;
-        document.getElementById("close-menu-header").onclick = closeMenuHeader;
-        
-    });
 
 
+function canviCover(num){
 
-function openMenuHeader(){
-    console.log(34242)
-    var blackie = document.createElement("div");
-        blackie.id = "blackie"
-        blackie.style.position = "fixed";
-        blackie.style.width = "100%";
-        blackie.style.height = "100%";
-        blackie.style.backgroundColor = "rgba(0, 0, 0, 0.2)"
-        blackie.style.zIndex = 10;
-        blackie.onclick = closeMenuHeader;
-        document.body.appendChild(blackie)
-
-   document.getElementById("menu-lateral-mb").style.display = "block";
-   document.getElementById("menu-lateral-mb").style.width = "80%";
-   
-
-    menu_header = true;
+    if(num == 1){
+        document.body.className = "";
+        document.body.classList.add('cover1');
+        document.body.classList.add('cover-index');
+    }else if(num == 2){
+        document.body.className = "";
+        document.body.classList.add('cover2');
+        document.body.classList.add('cover-index');
+    }else if(num == 3){
+        document.body.className = "";
+        document.body.classList.add('cover3');
+        document.body.classList.add('cover-index');
+    } 
 }
 
-function closeMenuHeader(){
-    document.getElementById("blackie").remove();
-    document.getElementById("menu-lateral-mb").style.width = "0%";
-    //document.getElementById("menu-lateral-mb").style.display = "none";
+
+function desplegaMenu() {
+  document.getElementById("div-menu-header").classList.toggle("mostra");
 }
 
-function intro(){
-    console.log("init")
-    let array_textos = ["<span class='t_intro' style='opacity:0'>THIS IS A</span> <span class='t_intro t_intro_t'>TRUE</span> <span class='t_intro'>STORY.</span>","<span class='t_intro'>At the request of the survivors, the names has been changed.</span>", "<span class='t_intro'>Out of respect of the dead, the rest has been told exactly as it ocurred.</span>", "<span class='fargo-typo-cover'>FARGO</span>"]
-    let el = document.getElementsByClassName("text-intro");
-    let fase = 0;
+function canviaTrailer(num){
+    let url1 = "https://www.youtube.com/embed/xZCiyw1ZfB0?autoplay=1&mute=1&&showinfo=0";
+    let title1 = "Fargo Season 1 Official Trailer 1 (2014) HD - FX TV Series";
+    let url2 = "https://www.youtube.com/embed/F_Y-JkTXY7k?autoplay=1&mute=1&&showinfo=0";
+    let title2 = "Fargo: Season 2 - Trailer &quot;Friendly People&quot;";
+    let url3 = "https://www.youtube.com/embed/bR2i8-z_fvc?autoplay=1&mute=1&&showinfo=0";
+    let title3 = "Fargo | Installment 3: Official Trailer | FX";
+    let url4 = "https://www.youtube.com/embed/RLEwtys6yZw?autoplay=1&mute=1&&showinfo=0";
+    let title4 = "FARGO Installment 4 Official Trailer (HD) Chris Rock";
+    let url5 = "https://www.youtube.com/embed/6SCn6UDXw_I?autoplay=1&mute=1&&showinfo=0";
+    let title5 = "Fargo | Installment 5 Official Trailer | Juno Temple, Jon Hamm, Jennifer Jason Leigh | FX";
 
-    setTimeout(canviaText, 2000)
-    
-    function canviaText(){
-        
-        el[0].innerHTML = array_textos[fase];
-        console.log(el[0].innerHTML)
-        let el_t = document.querySelectorAll(".t_intro");
-        
-        el_t.forEach(e => e.style.opacity = 0.9);
-        fase++;
-        if(fase<array_textos.length){setTimeout(function(){el_t.forEach(e => e.style.opacity = 0); setTimeout(canviaText, 3000)}, 3000)
+    document.getElementById("temp1").classList.remove('selecc');
+    document.getElementById("temp2").classList.remove('selecc');
+    document.getElementById("temp3").classList.remove('selecc');
+    document.getElementById("temp4").classList.remove('selecc');
+    document.getElementById("temp5").classList.remove('selecc');
+
+    document.getElementById("temp"+num).classList.add('selecc');
+
+
+    switch(num){
+        case 1: {
+            document.getElementById("div-trailer").src = url1;
+            document.getElementById("div-trailer").title = title1;
+            break;
         }
-    }
-}
+        case 2: {
+            document.getElementById("div-trailer").src = url2;
+            document.getElementById("div-trailer").title = title2;
+            break;
+        }
+        case 3: {
+            document.getElementById("div-trailer").src = url3;
+            document.getElementById("div-trailer").title = title3;
+            break;
+        }
+        case 4: {
+            document.getElementById("div-trailer").src = url4;
+            document.getElementById("div-trailer").title = title4;
+            break;
+        }
+        case 5: {
+            document.getElementById("div-trailer").src = url5;
+            document.getElementById("div-trailer").title = title5;
+            break;
+        }
 
-intro();
+
+    }
+
+}

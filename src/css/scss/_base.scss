@@ -10,17 +10,31 @@ $color-lletra-fargo: #8d051b;
 ul {
     margin-block-start: 0em;
     margin-block-end: 0em;
-    padding-inline-start: 00px;
+    padding-inline-start: 0px;
 }
 li{
     list-style-type: none;
 }
 
+h1{
+    font-size: 2rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+abbr{
+    text-decoration: none;
+}
+
+main{
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+}
 
 body{
+    min-height: 100vh;
     margin: 0;
     font-family: 'Source Sans 3', sans-serif;
-    height:100vh;
     font-size: 16px;  
     display:flex;
     flex-direction: column;
@@ -39,14 +53,95 @@ a{
 
 header {
     width: 100%;
-    padding: 1.5rem;
+    height: 5rem;
+    box-shadow: #797979 0px 3px 7px;
+    background-color: #fff;
+    // padding: 1.5rem;
+    padding-left: 7%;
+    padding-right: 7%;
     display:flex;
-    flex-direction: column;
+    justify-content:space-between;
     align-items:center;
     box-sizing: border-box;
     z-index:2;
     position: sticky;
     top: 0;
+    .menu-header {
+        height: 100%;
+        ul{
+            display: flex;
+            height:100%;
+            li{
+                text-transform: uppercase;
+                margin-left: 1rem;
+                margin-right: 1rem;
+                height: 100%;
+                display: flex;
+                align-items: center;
+            }
+            .actual{
+                border-bottom: solid 3px;
+            }
+        }
+      }
+}
+
+footer{
+    background-color: #f1f1f1;
+    box-sizing: border-box;
+    padding-left: 15%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    box-shadow: 0px -3px 15px #aaa;
+    div{
+        margin-top: 1rem;
+        font-size: .8rem;
+    }
+}
+
+
+// //######
+// .boto-menu {
+    
+//   }
+  
+//   /* Dropdown button on hover & focus */
+//   .boto-menu:hover, .boto-menu:focus {
+    
+//   }
+  
+//   ¡
+  
+//   /* Dropdown Content (Hidden by Default) */
+//   .div-despl {
+//     display: none;
+ 
+//   }
+  
+// .div-despl a {
+
+// }
+  
+// .div-despl a:hover {   
+// }
+  
+.mostra {
+    display:block;
+}
+
+.breadcrumb {
+    margin-left: 5%;
+    margin-top: 1rem;
+    font-size: .8rem;
+    ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+        li:not(:last-child)::after {
+            margin: 0.25rem;
+            content: ">";
+        }
+    }    
 }
 
 .logo{
@@ -54,10 +149,13 @@ header {
     width: auto;
 }
 
-main{
-    background-color: #fff;
-}
 
+.contingut{
+    width: 55%;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
 .fargo-typo-sans{
     font-family: 'Open Sans', sans-serif;
     color: $color-lletra-fargo;
@@ -69,11 +167,24 @@ main{
 
 .fargo-typo-header{
     font-family: 'Open Sans', sans-serif;
-    color: #fff;
+    color: #710000;
     font-weight: 900;
-    font-size: 4rem;
+    font-size: 2rem;
 }
 
+
+.f-perfil-malvo{
+    background-image: url("../media/fperfilmalvo.jpg");
+    background-size: cover;
+}
+.f-perfil-milligan{
+    background-image: url("../media/fperfilmilligan.jpg");
+    background-size: cover;
+}
+.f-perfil-vargas{
+    background-image: url("../media/fperfilvargas.jpg");
+    background-size: cover;
+}
 
 /*CONFIGURACIÓ DEL DISSENY RESPONSIU 
     ESTILS MODIFICATS PER TABLET  */
