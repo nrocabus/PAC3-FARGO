@@ -4,23 +4,43 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>My First Parcel App</title>
+    <title>My First Parcel App</title>    
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <!-- AOS -->
+
+
     <link rel="stylesheet" href="./css/estils.css" />
     <script type="module" src="./js/app.js"></script>
   </head>
    <body>
     
-    <include src="./src/components/_header.html"></include>
-
-
-    <div class="contingut">
-      <div class="breadcrumb">
+    <header>
+      <a href="index.html"><div class="fargo-typo-header">FARGO</div></a>
+      <div class="hamb"></div>
+      <nav class="menu-header">
         <ul>
-          <li><a href="index.html">Inici</a></li>
-          <li><a href="categoria.html">Antagonistes de Fargo</a></li>
-          <li><a href="detall-milligan.html">Mike Milligan</a></li>
+          <a href="presentacio.html"><li><span>Sobre la sèrie</span></li></a>
+          <a href="categoria.html"><li><span>Antagonistes de Fargo</span></li></a>
+          <a href="bibliografia.html"><li><span>Bibliografia i recursos</span></li></a>
         </ul>
-      </div>
+      </nav>
+    </header>
+    
+    <div class="breadcrumb">
+      <ul>
+        <li><a href="index.html">Inici</a></li>
+        <li><a href="categoria.html">Antagonistes de Fargo</a></li>
+        <li><a href="detall-milligan.html">Mike Milligan</a></li>
+      </ul>
+    </div>
+
+    <main>
+      
+      <div class="contingut">
+      
       <div class="bloc-detall">
         <h1>Lorne Malvo</h1>
         <p class="intro">Lorne Malvo és un personatge principal i antagonista a la temporada 1 de Fargo. Es tracta d'un sicari manipulador i carismàtic que està disposat a eliminar qui sigui necessari per complir amb la seva feina.</p>
@@ -54,8 +74,13 @@
            
 
     </div>
-
+    </main>
     <include src="./src/components/_footer.html"></include>
 
   </body>
 </html>
+
+
+<script>
+  AOS.init(); 
+</script>

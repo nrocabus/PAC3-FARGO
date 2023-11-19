@@ -4,79 +4,93 @@
     <meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Personatges de Fargo</title>
+    <title>Personatges de Fargo</title>    
+    
+    <!-- AOS -->
+    <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
+    <script src="../node_modules/aos/dist/aos.js"></script>
+    <!-- AOS -->
+
     <link rel="stylesheet" href="./css/estils.css" />
     <script type="module" src="./js/app.js"></script>
   </head>
 
   <body>
-    
-    <include src="./src/components/_header.html"></include>
 
 
+<header>
+    <a href="index.html"><div class="fargo-typo-header">FARGO</div></a>
+    <div class="hamb"></div>
+    <nav class="menu-header">
+      <ul>
+        <a href="presentacio.html"><li><span>Sobre la sèrie</span></li></a>
+        <a href="categoria.html"><li  class="actual"><span>Antagonistes de Fargo</span></li></a>
+        <a href="bibliografia.html"><li><span>Bibliografia i recursos</span></li></a>
+      </ul>
+    </nav>
 
-    <main>
-      <div class="breadcrumb">
+    <div class="menu-nav-media">
+      <ul>
+        <a href="presentacio.html"><li>Sobre la sèrie (Presentació)</li></a>
+        <a href="categoria.html"><li>Antagonistes de Fargo (Categoria)</li></a>
+        <a href="detall-malvo.html"><li class="detall"><img src="media/fperfilmalvo.jpg">Lorne Malvo (Detall)</li></a>
+        <a href="detall-milligan.html"><li class="detall"><img src="media/fperfilmilligan.jpg">Mike Milligan (Detall)</li></a>
+        <a href="detall-varga.html"><li class="detall"><img src="media/fperfilvargas.jpg">V.M. Vargas (Detall)</li></a>
+      </ul>
+    </div>
+
+  </header>
+ <div class="breadcrumb">
           <ul>
-            <li><a href="index.html">Inici </a></li>
+            <li><a href="index.html">Inici</a></li>
             <li>Antagonistes de Fargo</li>
           </ul>
         </div>
+
+    <main>
+     
+
       <div class="contingut">
+
+        <div>
+          <h1>Antagonistes de Fargo</h1>
+          <p class="intro">Un dels elements claus en l'èxit de Fargo és la complexitat dels personatges i en especial dels antagonistes que apareixen a cada temporada i que solen ser malvats. En general solen haver-hi múltiples antagonistes amb motivacions i aspiracions diferents, portant-los, en ocasions a batre's entre ells. </p>
+          <p>Són personatges profundament elaborats que solen combinar carisma amb una personalitat violenta i sense remordiments, fet que els fa més intrigants i fa que l'espectador vulgui aprofundir en la seva història. (https://screenrant.com/fargo-universe-all-villains-ranked-according-intelligence-smartest-dumbest)</p>
+        </div>
+
+        <div>
+          <h2 class="h2-menu">Antagonistes destacats</h2>
+          <div class="menu-destacats">
+            <a href="detall-milligan.html" class="trg-personatge">  
+              <div>
+                <div class="info-personatge">
+                <div class="nom-personatge">Mike Milligan</div>
+                <div class="temporada">Temporades 2 i 4</div>
+              <div class="th-foto-personatge  f-perfil-milligan"></div>   
+            </div>
+          </a>
         
-
-        <div class="cover-pres">
-          <div></div>
+          <a href="detall-malvo.html" class="trg-personatge">
+            <div>
+             <div class="info-personatge">
+              <div class="nom-personatge">Lorne Malvo</div>
+              <div class="temporada">Temporada 1</div>
+            </div>
+            <div class="th-foto-personatge  f-perfil-malvo"></div> 
+          </a>
+  
+          <a href="detall-varga.html" class="trg-personatge">
+            <div>
+              <div class="info-personatge">
+                <div class="nom-personatge">V.M. Varga</div>
+                <div class="temporada">Temporada 3</div>
+              <div class="th-foto-personatge  f-perfil-vargas"></div>
+            </div>
+          </a>
         </div>
 
-    <h1>Antagonistes de Fargo</h1>
-    <p class="intro">Un dels elements claus en l'èxit de Fargo és la complexitat dels personatges i en especial dels antagonistes que apareixen a cada temporada i que solen ser malvats. En general solen haver-hi múltiples antagonistes amb motivacions i aspiracions diferents, portant-los, en ocasions a batre's entre ells. </p>
-    <p>Són personatges profundament elaborats que solen combinar carisma amb una personalitat violenta i sense remordiments, fet que els fa més intrigants i fa que l'espectador vulgui aprofundir en la seva història. (https://screenrant.com/fargo-universe-all-villains-ranked-according-intelligence-smartest-dumbest)</p>
-
-      <h2 class="h2-menu">Antagonistes destacats</h2>
-      
-      
-        <div class="menu-destacats">
-
-      <a href="detall-milligan.html" class="trg-personatge">  
-          <div>
-            <div class="info-personatge">
-            <div class="nom-personatge">Mike Milligan</div>
-            <div class="temporada">Temporades 2 i 4</div>
-
-            <!-- <div class="descripcio-personatge">Un home comú i aparentment feble que es veu involucrat en una sèrie d'assassinats després d'un encontre casual amb l'assassí a sou Lorne Malvo.</div>
-          </div> -->
-          <div class="th-foto-personatge  f-perfil-milligan"></div>
-          
-        </div>
-      </a>
-      
-      <a href="detall-malvo.html" class="trg-personatge">
         <div>
-           <div class="info-personatge">
-            <div class="nom-personatge">Lorne Malvo</div>
-            <div class="temporada">Temporada 1</div>
-          <!--  <div class="descripcio-personatge">Un assassí aterridor i carismàtic que provoca el caos a la ciutat de Bemidji.</div>
-          </div> -->
-        </div>
-          <div class="th-foto-personatge  f-perfil-malvo"></div>
-          
-      </a>
-
-      <a href="detall-varga.html" class="trg-personatge">
-        <div>
-          <div class="info-personatge">
-            <div class="nom-personatge">V.M. Varga</div>
-            <div class="temporada">Temporada 3</div>
-            <!-- <div class="descripcio-personatge">Una inteligent i determinada agent de policia que investiga els assassinats de Bemidji i sospita de l'implicació de Lester Nygaard.</div>
-          </div> -->
-          <div class="th-foto-personatge  f-perfil-vargas"></div>
-          
-        </div>
-      </a>
-
-      </div>
-      <h2 class="h2-menu">Altres Antagonistes</h2>
+          <h2 class="h2-menu">Altres Antagonistes</h2>
 
       <div class="menu-altres-malvats">
         <div class="trg">
@@ -119,8 +133,12 @@
           <img class="foto" src="../src/media/al-ant-josto.jpg">
           <div class="nom">Josto Fadda</div>
         </div>
-        
       </div>
+
+        </div>
+
+      </div>
+      
     
   </main>
 </div>
@@ -131,3 +149,8 @@
 
   </body>
 </html>
+
+
+<script>
+  AOS.init(); 
+</script>

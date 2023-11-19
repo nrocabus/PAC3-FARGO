@@ -2,14 +2,14 @@
 <html lang="ca">
   <head>
     <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Informació sobre fargo</title>    
     
     <!-- AOS -->
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" />
     <script src="../node_modules/aos/dist/aos.js"></script>
-   
     <!-- AOS -->
 
     <link rel="stylesheet" href="./css/estils.css" />
@@ -17,64 +17,125 @@
     
   </head>
 
-  
-  
-    <!-- <header>
-      <a href="index.html"><div class="fargo-typo-header">FARGO</div></a>
-      <nav class="menu-header">
+
+<body>
+  <header>
+    <a href="index.html"><div class="fargo-typo-header">FARGO</div></a>
+    <div class="hamb" onclick="desplega()"></div>
+    <nav class="menu-header">
+      <ul>
+        <a href="presentacio.html"><li  class="actual"><span>Sobre la sèrie</span></li></a>
+        <a href="categoria.html"><li><span>Antagonistes de Fargo</span></li></a>
+        <a href="bibliografia.html"><li><span>Bibliografia i recursos</span></li></a>
+      </ul>
+    </nav>
+    <div id="nav-media" class="menu-nav-media">
+      <ul>
+        <a href="presentacio.html"><li>Sobre la sèrie (Presentació)</li></a>
+        <a href="categoria.html"><li>Antagonistes de Fargo (Categoria)</li></a>
+        <a href="detall-malvo.html"><li class="detall"><img src="media/fperfilmalvo.jpg">Lorne Malvo (Detall)</li></a>
+        <a href="detall-milligan.html"><li class="detall"><img src="media/fperfilmilligan.jpg">Mike Milligan (Detall)</li></a>
+        <a href="detall-varga.html"><li class="detall"><img src="media/fperfilvargas.jpg">V.M. Vargas (Detall)</li></a>
+      </ul>
+    </div>
+  </header>
+  <div class="breadcrumb">
         <ul>
-          <li class="actual"><span>Sobre la sèrie</span></li>
-          <a href="categoria.html"><li><span>Antagonistes de Fargo</span></li></a>
-          <a href="bibliografia.html"><li><span>Bibliografia i recursos</span></li></a>
-        </ul>
-      </nav>
-
-    </header> -->
-
-
-  <body>
-
-    <include src="./src/components/_header.html"></include>
-
-
-    <div class="cover-fons"></div>
-    
-    <div class="breadcrumb">
-        <ul>
-          <li><a href="index.html">Portada</a></li>
-          <li>Presentació</li>
+          <li><a href="index.html">Inici</a></li>
+          <li>Sobre la sèrie</li>
         </ul>
     </div>
-
-    <main>
-    <div class="contingut-pres">
-
-    <div class="wrapper"   data-aos="fade-up">
-      <div class="one"><iframe id="div-trailer" class="cover-trailer" src="https://www.youtube.com/embed/xZCiyw1ZfB0?autoplay=1&mute=1&&showinfo=0" title="Fargo Season 1 Official Trailer 1 (2014) HD - FX TV Series" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></div>
-      <div class="two"><div class="menu-temporades">
-        <ul>
-          <li class="tit-trailers">Tràilers</li>
-          <li class="temp selecc" id="temp1" onclick="canviaTrailer(1)"><div class="img-temp temporada1"></div>Temporada 1</li>
-          <li class="temp" id="temp2" onclick="canviaTrailer(2)"><div class="img-temp temporada2"></div>Temporada 2</li>
-          <li class="temp" id="temp3" onclick="canviaTrailer(3)"><div class="img-temp temporada3"></div>Temporada 3</li>
-          <li class="temp" id="temp4" onclick="canviaTrailer(4)"><div class="img-temp temporada4"></div>Temporada 4</li>
-          <li class="temp" id="temp5" onclick="canviaTrailer(5)"><div class="img-temp temporada5"></div>Temporada 5</li>
-        </ul>
-      </div></div>
-
+  <main>
     
 
+    <div class="cover-pres">
+      <h1>FARGO</h1>
+    </div>
 
+    <div>
 
-      <div class="three">
-        <a href="categoria.html">
-          <div class="link-ant">
-            <div class="title">ANTAGONISTES DE FARGO</div>
-            <q>Tot i que tots els personatges estan ben treballats, són els personatges antagonistes els que més captiven...</q>
-            <div class="link">Saber-ne més</div>
+              <li></li>
+      <div data-aos="fade-up" class="contingut">
+        <h2>Sobre Fargo</h2>
+        <p>"Fargo" és una sèrie de televisió produïda per FX Originals que es va estrenar el 15 d'abril de 2014 i va ser creada per Noah Hawley. Està basada en la pel·lícula amb el mateix nom dirigida per Joel i Ethan Coen el 1996.</p>
+        <p>La sèrie comparteix l'esperit còmic i estrany de la pel·lícula però presenta històries noves i independents, així com personatges nous personatges a cada temporada.</p>
+        <h3>"this is a true story"</h3>
+        <p>La frase "This is a true story" apareix a l'inici de cada episodi i s'utilitza com a eina narrativa per donar-li un to d'autenticitat a la sèrie ja que no és certa. Aquest fet encaixa amb l'estil peculiar que caracteritza Fargo.</p>
+
+      </div>
+
+      <div class="secc-trailers" data-aos="fade-up">
+        <h2>Tràilers de cada temporada</h2>
+        <div class="cont-trailer">
+          <div class="menu-trailers">
+            <ul>
+              <li class="temporada1 selecc" id="temp1" onclick="canviaTrailer(1)"><div><span>Temporada</span> 1</div></li>
+              <li class="temporada2" id="temp2" onclick="canviaTrailer(2)"><div><span>Temporada</span> 2</div></li>
+              <li class="temporada3" id="temp3" onclick="canviaTrailer(3)"><div><span>Temporada</span> 3</div></li>
+              <li class="temporada4" id="temp4" onclick="canviaTrailer(4)"><div><span>Temporada</span> 4</div></li>
+              <li class="temporada5" id="temp5" onclick="canviaTrailer(5)"><div><span>Temporada</span> 5</div></li>
+            </ul>
           </div>
-        </a>
+          <iframe id="div-trailer" class="cover-trailer" src="https://www.youtube.com/embed/xZCiyw1ZfB0?autoplay=1&mute=1&&showinfo=0" title="Fargo Season 1 Official Trailer 1 (2014) HD - FX TV Series" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+        </div>
+      </div>
+
+      
+         <div class="contingut pres-antag"  data-aos="fade-up">
+          <h2>Antagonistes de Fargo</h2> 
+          <p>Un dels trets distintius de fargo són els persontages complexos i ben construïts</p>
+
+        <a href="/src/categoria.html"><button class="link-ant">SABER-NE MÉS</button></a>
+      </div>
+
+      <div class="menu-ant"  data-aos="fade-up">
+        <h3>Antagonistes destacats</h3>
+        
+          <ul>
+            <li class="malvo"></li>
+            <li class="milligan"></li>
+            <li class="varga"></li>
+          </ul>
+      </div>
+      
+     
+
+        
+
+
+
+
+
+
+
+
+      <!-- <div class="wrapper"   data-aos="fade-up">
+        <div class="one">
+          <h1>Fargo</h1>
+          <iframe id="div-trailer" class="cover-trailer" src="https://www.youtube.com/embed/xZCiyw1ZfB0?autoplay=1&mute=1&&showinfo=0" title="Fargo Season 1 Official Trailer 1 (2014) HD - FX TV Series" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="two">
+          <div class="menu-temporades">
+            <ul>
+              <li class="tit-trailers">Tràilers</li>
+              <li class="temp selecc" id="temp1" onclick="canviaTrailer(1)"><div class="img-temp temporada1"></div>Temporada 1</li>
+              <li class="temp" id="temp2" onclick="canviaTrailer(2)"><div class="img-temp temporada2"></div>Temporada 2</li>
+              <li class="temp" id="temp3" onclick="canviaTrailer(3)"><div class="img-temp temporada3"></div>Temporada 3</li>
+              <li class="temp" id="temp4" onclick="canviaTrailer(4)"><div class="img-temp temporada4"></div>Temporada 4</li>
+              <li class="temp" id="temp5" onclick="canviaTrailer(5)"><div class="img-temp temporada5"></div>Temporada 5</li>
+            </ul>
+          </div>
+        </div>
+        <div class="three">
+          <a href="categoria.html">
+            <div class="link-ant">
+              <div class="title">ANTAGONISTES DE FARGO</div>
+              <q>Tot i que tots els personatges estan ben treballats, són els personatges antagonistes els que més captiven...</q>
+              <div class="link">Saber-ne més</div>
+            </div>
+          </a>
+        </div>
         <div class="five">
           <ul>
             <a href="detall-malvo.html"><li class="detall"><img src="media/fperfilmalvo.jpg">Lorne Malvo (Detall)</li></a>
@@ -82,93 +143,28 @@
             <a href="detall-varga.html"><li class="detall"><img src="media/fperfilvargas.jpg">V.M. Varga (Detall)</li></a>
           </ul>
         </div>
-      </div>
-      <div class="four">
-        <h1>Fargo</h1>
-<p class="intro">"Fargo" és una sèrie de televisió produïda per FX Originals que es va estrenar el 15 d'abril de 2014 i va ser creada per Noah Hawley. Està basada en la pel·lícula del mateix nom dirigida per Joel i Ethan Coen el 1996. La sèrie comparteix l'esperit còmic i estrany de la pel·lícula, així com el seu ambient a la regió dels Estats Units coneguda com a Midwest. No es tracta d'una adaptació directa de la pel·lícula, sinó que presenta una nova història i nous personatges a cada temporada. Tot i així, la sèrie manté el to peculiar, els personatges excèntrics i els esdeveniments inusuals característics de la película.</p>
-        <div class="cover-cont">
-          <img src="media/cover9.jpg">
-        </div>
-        
-    
-        <h2>"This is a true story"</h2>
-
-        <p>La frase "This is a true story" apareix a l'inici de cada episodi de la sèrie "Fargo" i no és certa sinó que s'utilitza com a eina narrativa per donar-li un to d'autenticitat a la sèrie aquest fet encaixa amb l'estil peculiar i l'humor negre que defineix la sèrie.</p>
-        <div class="personatges">
-          <h2>Personatges de Fargo</h2>
-          <p>Un dels trets dinstintius de fargo és que els personatges són complexos i estan ben treballats, sovint presenten inseguretats i dilemes ètics que els fa més reals per a l'espectador. Aquest fet és important donar credibilitat a una història plena de fets que poden semblar absurds i inversemblants. </p>  
-          <p>Tot i que tots els personatges estan ben treballats, són els personatges antagonistes els que més captiven i es pot dir que són un dels elements claus en l'èxit de Fargo. Al següent enllaç pots aprofundir en els <a href="categoria.html">antagonistes de Fargo</a>.</p>
-
-          <p>Alguns dels antagonistes que han esdevingut una part fonamental de Fargo són en Lorne Malvo, un malvat fred i tranquil que submergeix en un espiral de violència el poble de Bemidgi i que és l'antagonista principal de la primera temporada, en Miki Milligan, un dels pocs personatges que repeteixen aparició en diferents temporades i en V.M. Vargas un home de negocis manipulador i pervers. </p>    </div>
-      </div>
-      
-    </div>
-</div>
-
-
-    <!-- <div class="pres-main"><p class="intro">"Fargo" és una sèrie de televisió que es va estrenar el 15 d'abril de 2014 i va ser creada per Noah Hawley. Està basada en la pel·lícula del mateix nom dirigida per Joel i Ethan Coen el 1996. La sèrie comparteix l'esperit còmic i estrany de la pel·lícula, així com el seu ambient a la regió dels Estats Units coneguda com a Midwest. No es tracta d'una adaptació directa de la pel·lícula, sinó que presenta una nova història i nous personatges a cada temporada. Tot i així, la sèrie manté el to peculiar, els personatges excèntrics i els esdeveniments inusuals característics de la película.</p>
-    
-      <div>
-        <h2>"This is a true story"</h2>
-
-        <p>La frase "This is a true story" apareix a l'inici de cada episodi de la sèrie "Fargo" i no és certa sinó que s'utilitza com a eina narrativa per donar-li un to d'autenticitat a la sèrie aquest fet encaixa amb l'estil peculiar i l'humor negre que defineix la sèrie.</p>
-      </div></div>
-    
-    
-    <div class="contingut-pres">
-
-         
-            <iframe id="div-trailer" class="cover-trailer" src="https://www.youtube.com/embed/xZCiyw1ZfB0?autoplay=1&mute=1&&showinfo=0" title="Fargo Season 1 Official Trailer 1 (2014) HD - FX TV Series" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <div class="menu-temporades">
-              <ul>
-                <li class="tit-trailers">Tràilers</li>
-                <li class="temp selecc" id="temp1" onclick="canviaTrailer(1)"><div class="img-temp temporada1"></div>Temporada 1</li>
-                <li class="temp" id="temp2" onclick="canviaTrailer(2)"><div class="img-temp temporada2"></div>Temporada 2</li>
-                <li class="temp" id="temp3" onclick="canviaTrailer(3)"><div class="img-temp temporada3"></div>Temporada 3</li>
-                <li class="temp" id="temp4" onclick="canviaTrailer(4)"><div class="img-temp temporada4"></div>Temporada 4</li>
-                <li class="temp" id="temp5" onclick="canviaTrailer(5)"><div class="img-temp temporada5"></div>Temporada 5</li>
-              </ul>
-            </div>
-          
-         
+        <div class="four">
+          <h1>Fargo</h1>
+          <p class="intro">"Fargo" és una sèrie de televisió produïda per FX Originals que es va estrenar el 15 d'abril de 2014 i va ser creada per Noah Hawley. Està basada en la pel·lícula del mateix nom dirigida per Joel i Ethan Coen el 1996. La sèrie comparteix l'esperit còmic i estrany de la pel·lícula, així com el seu ambient a la regió dels Estats Units coneguda com a Midwest. No es tracta d'una adaptació directa de la pel·lícula, sinó que presenta una nova història i nous personatges a cada temporada. Tot i així, la sèrie manté el to peculiar, els personatges excèntrics i els esdeveniments inusuals característics de la película.</p>
+          <div class="cover-cont">
+            <img src="media/cover9.jpg">
           </div>
-          <div class="pres-main">
-
-              <div class="personatges">
+          <h2>"This is a true story"</h2>
+          <p>La frase "This is a true story" apareix a l'inici de cada episodi de la sèrie "Fargo" i no és certa sinó que s'utilitza com a eina narrativa per donar-li un to d'autenticitat a la sèrie aquest fet encaixa amb l'estil peculiar i l'humor negre que defineix la sèrie.</p>
+          <div class="personatges">
             <h2>Personatges de Fargo</h2>
-            <p>Un dels trets dinstintius de fargo és que els personatges són complexos i estan ben treballats, sovint presenten inseguretats i dilemes ètics que els fa més reals per a l'espectador. Aquest fet és important donar credibilitat a una història plena de fets que poden semblar absurds i inversemblants. </p>  
+            <p>Un dels trets dinstintius de fargo és que els personatges són complexos i estan ben treballats, sovint presenten inseguretats i dilemes ètics que els fa més reals per a l'espectador. Aquest fet és important donar credibilitat a una història plena de fets que poden semblar absurds i inversemblants.</p>  
             <p>Tot i que tots els personatges estan ben treballats, són els personatges antagonistes els que més captiven i es pot dir que són un dels elements claus en l'èxit de Fargo. Al següent enllaç pots aprofundir en els <a href="categoria.html">antagonistes de Fargo</a>.</p>
-
-            <p>Alguns dels antagonistes que han esdevingut una part fonamental de Fargo són en Lorne Malvo, un malvat fred i tranquil que submergeix en un espiral de violència el poble de Bemidgi i que és l'antagonista principal de la primera temporada, en Miki Milligan, un dels pocs personatges que repeteixen aparició en diferents temporades i en V.M. Vargas un home de negocis manipulador i pervers. </p>        
-              
-            <div>
-              <ul>
-                <a href=""><li>Lorne Malvo</li></a>
-                <a href=""><li>Mike Milligan</li></a>
-                <a href=""><li>V. M. Vargas</li></a>
-              </ul>
-            </div>
-            
+            <p>Alguns dels antagonistes que han esdevingut una part fonamental de Fargo són en Lorne Malvo, un malvat fred i tranquil que submergeix en un espiral de violència el poble de Bemidgi i que és l'antagonista principal de la primera temporada, en Miki Milligan, un dels pocs personatges que repeteixen aparició en diferents temporades i en V.M. Vargas un home de negocis manipulador i pervers. </p>
+          </div>
         </div>
-       
-<!-- 
-        <p>La sèrie ha guanyat diversos premis i ha estat una de les produccions més aclamades de la televisió en els darrers anys. Cada temporada és una història independent malgrat sol haver-hi algun personatge que apareix a més d'una temporada.</p> -->
-
-
-          
-
-
-          
-
-
-
-        </div>
-      </main>
-        <include src="./src/components/_footer.html"></include>
-  </body>
+      </div>
+    </div> -->
+  </main>
+  <include src="./src/components/_footer.html"></include>
+</body>
 </html>
-
-
+ 
 <script>
   AOS.init(); 
 </script>
