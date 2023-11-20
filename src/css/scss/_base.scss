@@ -48,6 +48,17 @@ a{
     color: black;
 }
 
+figure{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+}
+
+p{
+    margin-block-start: 0;
+}
+
 header {
     width: 100%;
     height: 3rem;
@@ -208,7 +219,8 @@ footer{
     margin-right: auto;
 
     div{
-        margin-top: 5rem;
+        // margin-top: 1rem;
+        margin-bottom: 2rem;
     }
 }
   
@@ -262,6 +274,12 @@ footer{
         padding-left: 0; 
         text-align: center;
     }
+    @media (orientation: landscape) {
+        header .menu-nav-media ul li{
+
+                    height: 3rem;
+        }
+    }
 }
 
 @media screen and (max-width: 600px ){   
@@ -285,4 +303,15 @@ footer{
         text-align: center;
     }
 
+}
+
+
+
+@media screen and (max-width: 600px){
+    body{
+    font-size: .8rem;
+    }
+    .breadcrumb{
+        display: none;
+    }
 }

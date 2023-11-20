@@ -13,7 +13,8 @@
 //     background-size: cover;
 // }
 
-$tempsAnim: 4.5s;
+//$tempsAnim: .5s;
+$tempsAnim: 3s;
 
 @keyframes fadein-text{
     0% {opacity: 0;}
@@ -25,9 +26,31 @@ $tempsAnim: 4.5s;
       100% {opacity:1;}
     }
 
+@keyframes fadein-text-info{
+    0% {
+        bottom: 0;
+    }
+    100% {
+        bottom: 6rem;
+        opacity:1
+    }
+}
+
 .bd-m{
     height: 100vh;
 
+}
+
+.hamb-index{
+    display: none;
+    z-index: 999;
+    position: absolute;
+    top: .2rem;
+    right: 7%;
+    height: 2rem;
+    aspect-ratio: 1 / 1;
+    background-image: url(/src/media/hamb_menu.ico);
+    background-size: cover;
 }
 
 .cover-index{
@@ -42,14 +65,21 @@ $tempsAnim: 4.5s;
     box-shadow: #909090 0px 0px 20px;
     max-width: 1250px;
 
+    display: flex;
+    .text-index{
+        width: 100%;
+        height: 100%;
+    }
     .menu-dret{
         background-color: #fff;
         width: 30%;
         height: 100%;
-        float: right;
-        right: 0;
+        // float: right;
+        // right: 0;
         display:flex;
         align-items:center;
+        z-index:1;
+        transition: .3s;
         ul{
             width: 100%;
             li{
@@ -92,21 +122,84 @@ $tempsAnim: 4.5s;
             .detall{
                 justify-content: flex-start;
             }
+            div.detall{
+                justify-content: center;
+                display: flex;
+            }
+            div.detall div{
+                filter: grayscale(.8);
+                &:hover{
+                    filter: grayscale(0)
+                }
+            }
+        }
+        .fargo-typo-header{
+            padding-left: 2rem;
+            padding-bottom: 1rem
         }
         
     }
     
-        .text-i{
-            opacity:0;
-            width: 70%;
-            text-align:center;
-            letter-spacing: .05rem;;
-            position: absolute;
-            top: 60%;
-            //left: 23%; 
-            //max-width: 40%;
-            text-shadow: #fff 1px 0 10px, #fff 1px 0 10px;
+    .text-info{
+        display: none;
+        opacity:0;
+        width: 100%;
+        text-align:center;
+        letter-spacing: .05rem;
+        position: absolute;
+        bottom: 6rem;
+        text-shadow: #fff 1px 0 10px, #fff 1px 0 10px;
+
+        .info-button{
+            color: #790101cc;
+            background-color: #0000;
+            border: 3px solid;
+            border-radius: 3rem;
+            height: 1rem;
+            width: 10rem;
+            margin-bottom: 1rem;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1rem;
+            font-weight: bold;
         }
+
+
+        p{
+            border: solid 1px;
+        }
+    }
+
+    .prime{
+        width: 3rem;
+        height: 3rem;
+        background-image: url(/src/media/prime-logo.png);
+        background-size: cover;
+        border: none;
+        margin: .2rem;
+    }
+
+    .hbo{
+        width: 3rem;
+        height: 3rem;
+        background-image: url(/src/media/hbo-logo.png);
+        background-size: cover;
+        border: none;
+        margin: .2rem;
+    }
+    .text-i{
+        position: absolute;
+        top: 60%;
+        box-sizing: border-box;
+        padding: 0 1rem 0 1rem;
+        opacity:0;
+        width: 60%;
+        text-align:center;
+        letter-spacing: .05rem;
+        //left: 23%; 
+        //max-width: 40%;
+        text-shadow: #fff 1px 0 10px, #fff 1px 0 10px;
+    }
         .text1{
             content: "THIS IS A TRUE STORY.";
             
@@ -143,6 +236,8 @@ $tempsAnim: 4.5s;
             content: "FARGO";
             font-size: 2rem;
             letter-spacing: 4rem;
+            padding-left: 4rem;
+            box-sizing: border-box;
             font-weight:bold;
             color: rgba(121, 1, 1, 0.8);
             animation-name: fadein-text-final;
@@ -150,6 +245,25 @@ $tempsAnim: 4.5s;
             animation-delay: ($tempsAnim*3+.5);
             animation-fill-mode: forwards;
 
+        }
+        
+        .text5{
+            //content: "FARGO";
+            position: absolute;
+            bottom: 3rem;
+            // font-size: 1rem;
+            // letter-spacing: 1rem;
+            font-weight:400;
+            color: rgba(121, 1, 1, 0.8);
+            animation-name: fadein-text-info;
+            animation-duration: 1s;
+            animation-delay: ($tempsAnim*3+1s);
+            animation-fill-mode: forwards;
+
+            div{
+                display: flex;
+                justify-content: center;
+            }
         }
 
     
@@ -309,4 +423,88 @@ $tempsAnim: 4.5s;
 .plat{
     width: 3rem;
     height: 3rem;
+}
+
+
+
+@media screen and (min-width: 600px ) and (max-width: 992px ) {
+    .cover-index{
+        width: 100%;
+        height: 100%;
+        .menu-dret{
+            width: 0;
+            display: none;
+        }
+        
+        .text-i{
+            width: 100%
+        }
+    }
+    
+    
+    .text-info{
+        display: block !important;
+    }
+
+    .hamb-index{
+        display: block;
+    }
+    .mostra-i{
+        width: 100% !important;
+        display: flex !important;
+    }
+    
+    @media (orientation: landscape) and (max-width: 750px ){
+        .cover-index{
+            .text-i{
+                top: 25%;
+            }
+            .menu-dret{
+                ul{
+                    li{
+                        height: 2rem;
+                    }                }
+            }
+        }
+      }
+    
+}
+
+@media screen and (max-width: 600px ){
+    .cover-index{
+        width: 100%;
+        height: 100%;
+        .menu-dret{
+            width: 0;        
+            display: none;
+        }
+        .text-i{
+            width: 100%
+        }
+        .text4{
+            padding-left: 1.5rem;
+            font-size: 1.5rem;
+            letter-spacing: 1.5rem;
+        }
+    }
+
+    .text-info{
+        display: block !important;
+    }
+
+    .hamb-index{
+        display: block;
+    }
+    .mostra-i{
+        width: 90% !important;
+        position: absolute;
+        right:0;
+        display: flex !important;
+    }
+    .cover-index{
+        background-image: url(/src/media/cover-ma-mobil.jpg);
+        background-position-x: 100%;
+
+    }
+
 }
