@@ -123,8 +123,10 @@ $tempsAnim: 3s;
                 justify-content: flex-start;
             }
             div.detall{
-                justify-content: center;
+                // justify-content: center;
                 display: flex;
+                margin-left: 1.5rem;
+                margin-top: 2rem;
             }
             div.detall div{
                 filter: grayscale(.8);
@@ -218,20 +220,20 @@ $tempsAnim: 3s;
         .hide{
                 visibility: hidden;
             }
-        .text2{
-            content: "At the request of the survivors, the names has been changed.";
+        // .text2{
+        //     content: "At the request of the survivors, the names has been changed.";
             
-            animation-name: fadein-text;
-            animation-duration: $tempsAnim;
-            animation-delay: $tempsAnim+.5;
-        }
-        .text3{
-            content: "Out of respect of the dead, the rest has been told exactly as it ocurred.";
+        //     animation-name: fadein-text;
+        //     animation-duration: $tempsAnim;
+        //     animation-delay: $tempsAnim+.5;
+        // }
+        // .text3{
+        //     content: "Out of respect of the dead, the rest has been told exactly as it ocurred.";
             
-            animation-name: fadein-text;
-            animation-duration: $tempsAnim;
-            animation-delay: $tempsAnim*2+.5;
-        }
+        //     animation-name: fadein-text;
+        //     animation-duration: $tempsAnim;
+        //     animation-delay: $tempsAnim*2+.5;
+        // }
         .text4{
             content: "FARGO";
             font-size: 2rem;
@@ -242,7 +244,7 @@ $tempsAnim: 3s;
             color: rgba(121, 1, 1, 0.8);
             animation-name: fadein-text-final;
             animation-duration: $tempsAnim;
-            animation-delay: ($tempsAnim*3+.5);
+            animation-delay: ($tempsAnim+.5);
             animation-fill-mode: forwards;
 
         }
@@ -257,7 +259,7 @@ $tempsAnim: 3s;
             color: rgba(121, 1, 1, 0.8);
             animation-name: fadein-text-info;
             animation-duration: 1s;
-            animation-delay: ($tempsAnim*3+1s);
+            animation-delay: ($tempsAnim+1s);
             animation-fill-mode: forwards;
 
             div{
@@ -454,7 +456,7 @@ $tempsAnim: 3s;
         display: flex !important;
     }
     
-    @media (orientation: landscape) and (max-width: 750px ){
+    @media (orientation: landscape) and (max-width: 1000px ){
         .cover-index{
             .text-i{
                 top: 25%;
