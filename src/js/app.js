@@ -1,4 +1,7 @@
 
+
+
+
 function canviCover(num){
 
     if(num == 1){
@@ -30,11 +33,15 @@ function canviCover(num){
             document.body.classList.add('cover-index');
         } 
     }
+}
     
-    
-    // function desplegaMenu() {
-    //   document.getElementById("div-menu-header").classList.toggle("mostra");
-    // }
+function desplega(){
+    document.getElementById("nav-media").classList.toggle("mostra");
+  } 
+
+function desplegaIndex(){
+    document.getElementById("nav-media-index").classList.toggle("mostra-i");
+}
     
     function canviaTrailer(num){
         let url1 = "https://www.youtube.com/embed/xZCiyw1ZfB0?autoplay=1&mute=1&&showinfo=0";
@@ -89,7 +96,7 @@ function canviCover(num){
     
     }
     
-}
+
 
 
 // function desplegaMenu() {

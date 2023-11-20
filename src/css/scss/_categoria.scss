@@ -3,6 +3,30 @@
     text-align: center;
 }
 
+
+.cover-ant{
+    width: 100%;
+    margin-left: auto;
+    margin-right:auto;
+    height: 20rem;
+    background-image: url(/src/media/cover-f4.jpg);
+    background-size: cover;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    h1{
+        letter-spacing: 5rem;
+    text-align: center;
+    color: #680000c9;
+    text-shadow: 0 0 20px #fff6;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: 5rem;
+    font-size: 4rem;
+    }
+}
+
+
 .menu-destacats{
     display:flex; 
     flex-wrap: wrap;
@@ -11,15 +35,19 @@
     
     .trg-personatge{
         box-sizing: border-box;
-        width:12rem;
-        min-height: 10rem;
-        margin-bottom: 0.5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        box-shadow: rgb(199, 199, 199) 0px 3px 10px;
-        padding: 1rem;
+    width: 15rem;
+    min-height: 10rem;
+    margin-bottom: 0.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    /* padding: 1rem; */
+    border-radius: 2rem;
+    box-shadow: 0 3px 10px #c7c7c7;
+    background-color: #000;
+    overflow: hidden;
+
         &:hover {
-            box-shadow: rgb(255, 152, 152) 0px 3px 10px;
+            box-shadow: 0 0px 0px 5px #900000;;
         }
 
         .th-foto-personatge{
@@ -38,7 +66,7 @@
             text-transform: uppercase;
             font-size: 0.9rem;
             font-weight: 700;
-            color: #000000;
+            color: #ffffff;
             text-align: center;
         }
         .temporada{
@@ -86,3 +114,26 @@
 }
 
    
+@media screen and (min-width: 600px ) and (max-width: 992px ){
+    
+    .cover-ant{
+
+        h1{
+            font-size: 2rem;
+            letter-spacing: 3rem;
+            padding-left: 3rem;
+        }
+    }
+}
+
+@media screen and (max-width: 600px){
+
+    .cover-ant{
+
+        h1{
+            font-size: 2rem;
+            letter-spacing: 1.5rem;
+            padding-left: 1.5rem;
+        }
+    }
+}

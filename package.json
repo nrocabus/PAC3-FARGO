@@ -12,7 +12,9 @@
     "sass-dev": "sass --watch --update src/css/scss/estils.scss src/css/estils.css",
     "sass-prod": "sass --no-source-map src/css/scss/estils.scss src/css/estils.css",
     "build": "npm-run-all clean sass-prod parcel:build",
-    "parcel-sass": "npm-run-all --parallel start sass-dev"
+    "sass-build": "npx sass src/css/scss/estils.scss src/css/estils.css",
+    "start-sass": "npx sass --watch src/css/scss/estils.scss src/css/estils.css",
+    "parcel-sass": "npm-run-all --parallel start start-sass"
   },
   "keywords": [],
   "author": "",
@@ -23,5 +25,8 @@
     "posthtml-include": "^1.7.4",
     "rimraf": "^5.0.5",
     "sass": "^1.69.5"
+  },
+  "dependencies": {
+    "aos": "^2.3.4"
   }
 }
