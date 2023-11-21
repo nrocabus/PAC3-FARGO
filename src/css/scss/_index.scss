@@ -54,7 +54,7 @@ $tempsAnim: 3s;
 }
 
 .cover-index{
-    //background-image: url(../media/cover-ma.jpg);
+    background-image: url(../media/cover-ma.jpg);
     background-size: cover;
     width: 86%;
     height: 86%;
@@ -459,7 +459,10 @@ $tempsAnim: 3s;
     @media (orientation: landscape) and (max-width: 1000px ){
         .cover-index{
             .text-i{
-                top: 25%;
+                top: 40%;
+            }
+            .text-info{
+                bottom: 0 !important;
             }
             .menu-dret{
                 ul{
