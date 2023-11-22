@@ -6,7 +6,7 @@
   "browserslist": "> .5% or last 2 versions",
   "scripts": {
     "parcel:dev": "parcel",
-    "parcel:build": "parcel build --public-url ./",
+    "parcel:build": "parcel build",
     "clean": "rimraf dist .parcel-cache",
     "start": "npm-run-all clean parcel:dev",
     "sass-dev": "sass --watch --update src/css/scss/estils.scss src/css/estils.css",
