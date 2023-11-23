@@ -1,6 +1,12 @@
 
 
 //contingut detall. desktop
+article{
+    margin-top: 2rem;
+}
+section{
+    margin-top: 4rem;
+}
 
 .bloc-detall{
 
@@ -26,24 +32,30 @@
         display: flex;
         padding: 0.5rem;
         margin-top:3rem;
+        background:#f1f1f1;
+        border-radius: 2rem;
+        align-items: center;
 
         .img-actor-tho{
-            width: 5rem;
-            height: 5rem;
             background-image: url("../media/BillyBobThornton(portrait).jpg");
             background-size: cover;
+            border-radius: .5rem;
+            width: 5rem;
+            height: 5rem;
         }
         .img-actor-dav{
             width: 5rem;
             height: 5rem;
             background-image: url("../media/david-thewlis.jpg");
             background-size: cover;
+            border-radius: .5rem;
         }
         .img-actor-mik{
             width: 5rem;
             height: 5rem;
             background-image: url("../media/mike-p.jpg");
             background-size: cover;
+            border-radius: .5rem;
         }
         .actor-desc{
             width: calc(100% - 5rem);
@@ -87,14 +99,20 @@
         margin-right: 2rem
     }
         li{
-            display: flex;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
+            
             border-bottom: dotted 0.1rem #d1d1d1;
-            line-height: 4rem;
-            width: 100%;
+            
             &:hover{
                 background: #f1f1f1;
+            }
+            a{
+                div{
+                    display: flex;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
+            line-height: 4rem;
+            width: 100%;
+                }
             }
         }
 }
@@ -114,11 +132,15 @@
             align-items: center;
             .img-actor-tho, .img-actor-mik, .img-actor-dav{
                 width: 10rem;
-                height: 10rem;
+                height: 15rem;
+                position: relative;
+                bottom: 2rem;
+                border-radius: 2rem;
             }
             .actor-desc{
                 margin-top:.5rem;
                 width: 100%;
+                padding: 0 1rem 2rem 1rem;
             }
         }
     }

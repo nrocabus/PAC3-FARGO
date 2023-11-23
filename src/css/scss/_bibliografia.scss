@@ -4,28 +4,34 @@
 
 
 .imatges{
-    width:80%;
+    // width:80%;
     margin-left: auto;
     margin-right: auto;
-    display: -ms-flexbox; /* IE10 */
     display: flex;
-    -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
     flex-direction:row;
     padding: 0 4px;
     justify-content: center;
 
+
+}
+
+.main-mod{
+    width: 95%;
 }
 
 .img-item{
-    height: 15rem;
     margin: .3rem;
     position:relative;
     &:hover{
         opacity:.9;
     }
     img{
-        height:100%
+        height: auto;
+        width: auto;
+        max-width: 100%;
+        max-height: 300px;
+        object-fit: cover;
     }
     div{
         background-color: #00000080;
@@ -49,6 +55,31 @@
         }
     }
 }
+.bibl-sec{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.videos{
+    margin-bottom: 5rem;
+
+} 
+
+.llista-videos{
+    &>li{
+        display: flex;
+        align-items: center;
+        margin: 1rem 0 .5rem 0;
+    }
+    img{
+        width: 6rem;
+        aspect-ratio: 1.5;
+        object-fit: cover;
+        margin-right: .5rem;
+    }
+    span{
+        font-weight: bold;
+    }
+}
 
 .column {
     -ms-flex: 40%; /* IE10 */
@@ -62,4 +93,32 @@
     vertical-align: middle;
     width: 100%;
     max-height: 25rem;
+  }
+
+
+  @media screen and (max-width: 600px){
+
+    .videos{
+        width: 70%;
+        margin-right: auto;
+        margin-left: auto;
+        .llista-videos > li{
+            flex-direction: column;
+            justify-content: center;
+            border-bottom: solid 1px #ddd;
+            padding: 1rem 0 1rem 0;
+            img{
+                width: 70%
+            }
+        }
+    }
+
+    .img-item{
+        width: 100%;
+        
+        img{
+            width: 100%;
+        }
+    }
+
   }

@@ -3,7 +3,7 @@
   "source": "src/index.html",
   "version": "1.0.0",
   "description": "",
-  "browserslist": "> .5% or last 2 versions",
+  "browserslist": "> .5% or last 4 versions",
   "scripts": {
     "parcel:dev": "parcel",
     "parcel:build": "parcel build",

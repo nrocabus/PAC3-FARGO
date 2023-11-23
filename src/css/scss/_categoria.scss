@@ -47,7 +47,10 @@
     overflow: hidden;
 
         &:hover {
-            box-shadow: 0 0px 0px 5px #900000;;
+            //box-shadow: 0 0px 0px 5px #900000;
+            .info-personatge{
+                visibility:hidden;
+            }
         }
 
         .th-foto-personatge{
@@ -61,6 +64,7 @@
             display:flex;
             flex-direction: column;
             justify-content: center;
+            background: rgba(0, 0, 0, 0.5);
         }
         .nom-personatge{
             text-transform: uppercase;
@@ -82,6 +86,10 @@
             font-size: 0.8rem;
         }
     }
+}
+
+.pres-ant{
+    margin-bottom: 5rem;
 }
 
 .menu-altres-malvats{
