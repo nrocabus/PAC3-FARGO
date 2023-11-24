@@ -47,7 +47,7 @@ $tempsAnim: 3s;
     margin-top: auto;
     margin-bottom: auto;
     box-shadow: #909090 0px 0px 20px;
-    max-width: 1250px;
+    //max-width: 1250px;
 
     display: flex;
     .text-index{
@@ -132,11 +132,11 @@ $tempsAnim: 3s;
     
     .text-info{
         opacity:0;
-        width: 70%;
+        width: 100%;
         text-align:center;
         letter-spacing: .05rem;
-        position: absolute;
-        bottom: 6rem;
+        position: relative;
+        top:60%;
         text-shadow: #fff 1px 0 10px, #fff 1px 0 10px;
 
         .info-button{
@@ -177,17 +177,18 @@ $tempsAnim: 3s;
         margin: .2rem;
     }
     .text-i{
-        position: absolute;
+        position: relative;
         top: 50%;
         box-sizing: border-box;
         padding: 0 1rem 0 1rem;
         opacity:0;
-        width: 70%;
+        width: 100%;
         text-align:center;
         letter-spacing: .05rem;
         //left: 23%; 
         //max-width: 40%;
         text-shadow: #fff 1px 0 10px, #fff 1px 0 10px;
+        
     }
         .text1{
             content: "THIS IS A TRUE STORY.";
@@ -238,8 +239,8 @@ $tempsAnim: 3s;
         
         .text5{
             //content: "FARGO";
-            position: absolute;
-            bottom: 3rem;
+            // position: absolute;
+            // bottom: 3rem;
             // font-size: 1rem;
             // letter-spacing: 1rem;
             font-weight:400;

@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" >
     <script src="../node_modules/aos/dist/aos.js"></script>
     <link rel="stylesheet" href="./css/estils.css">
+
+    <script src="./js/app.js"></script>
+
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -49,16 +52,19 @@
   <main class="main-pres">
 
     <div class="secc-trailers" data-aos="fade-up">
+
+      
+
       <div class="cont-trailer">
         
         <iframe id="div-trailer" class="cover-trailer" src="https://www.youtube.com/embed/xZCiyw1ZfB0?autoplay=1&mute=1&&showinfo=0" title="Fargo Season 1 Official Trailer 1 (2014) HD - FX TV Series" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div class="menu-trailers">
           <ul>
-            <li title="Tràiler de la 1a temporada" class="temporada1 selecc" id="temp1" onclick="canviaTrailer(1)"><div><span>Temporada</span> 1</div></li>
-            <li title="Tràiler de la 2a temporada" class="temporada1 selecc" class="temporada2" id="temp2" onclick="canviaTrailer(2)"><div><span>Temporada</span> 2</div></li>
-            <li title="Tràiler de la 3a temporada" class="temporada3" id="temp3" onclick="canviaTrailer(3)"><div><span>Temporada</span> 3</div></li>
-            <li title="Tràiler de la 5a temporada" class="temporada4" id="temp4" onclick="canviaTrailer(4)"><div><span>Temporada</span> 4</div></li>
-            <li title="Tràiler de la 5a temporada" class="temporada5" id="temp5" onclick="canviaTrailer(5)"><div><span>Temporada</span> 5</div></li>
+            <li title="Tràiler de la 1a temporada" class="temporada1 selecc" id="temp1"><div><span>Temporada</span> 1</div></li>
+            <li title="Tràiler de la 2a temporada" class="temporada2" class="temporada2" id="temp2"><div><span>Temporada</span> 2</div></li>
+            <li title="Tràiler de la 3a temporada" class="temporada3" id="temp3"><div><span>Temporada</span> 3</div></li>
+            <li title="Tràiler de la 5a temporada" class="temporada4" id="temp4"><div><span>Temporada</span> 4</div></li>
+            <li title="Tràiler de la 5a temporada" class="temporada5" id="temp5"><div><span>Temporada</span> 5</div></li>
           </ul>
         </div>
       </div>
@@ -154,10 +160,12 @@
 
   </main>
   <include src="./src/components/_footer.html"></include>
-  <script src="./js/app.js"></script>
+ 
+  
   <script>
     AOS.init(); 
   </script>
 </body>
 </html>
  
+<script src="./js/app.js"></script>

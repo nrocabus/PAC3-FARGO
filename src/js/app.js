@@ -1,4 +1,5 @@
 function desplega() {
+    
     document.getElementById("nav-media").classList.toggle("mostra");
 }
 
@@ -26,8 +27,8 @@ function canviaTrailer(num) {
 
     document.getElementById("temp" + num).classList.add('selecc');
 
-
     switch (num) {
+        
         case 1: {
             document.getElementById("div-trailer").src = url1;
             document.getElementById("div-trailer").title = title1;
@@ -63,31 +64,34 @@ function canviaTrailer(num) {
 if(document.getElementById("hamb-menu") !== null){
     document.getElementById("hamb-menu").addEventListener("click", desplega);
 }
+
+
 if(document.getElementById("hamb-index") !== null){
     document.getElementById("hamb-index").addEventListener("click", desplegaIndex)
 }
 
+
 if(document.getElementById("temp1") !== null){
-    document.getElementById("temp1").addEventListener("click", canviaTrailer(1))
+    document.getElementById("temp1").addEventListener("click", function() {  canviaTrailer(1); })
 }
 
 
 if(document.getElementById("temp2") !== null){
-    document.getElementById("temp2").addEventListener("click", canviaTrailer(2))
+    document.getElementById("temp2").addEventListener("click", function() {  canviaTrailer(2); })
 }
 
 
 if(document.getElementById("temp3") !== null){
-    document.getElementById("temp3").addEventListener("click", canviaTrailer(3))
+    document.getElementById("temp3").addEventListener("click", function() {  canviaTrailer(3); })
 }
 
 
 if(document.getElementById("temp4") !== null){
-    document.getElementById("temp4").addEventListener("click", canviaTrailer(4))
+    document.getElementById("temp4").addEventListener("click", function() {  canviaTrailer(4); })
 }
 
 
 if(document.getElementById("temp5") !== null){
-    document.getElementById("temp5").addEventListener("click", canviaTrailer(5))
+    document.getElementById("temp5").addEventListener("click", function() {  canviaTrailer(5); })
 }
 
