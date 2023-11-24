@@ -1,11 +1,10 @@
 
-
-//contingut detall. desktop
-article{
-    margin-top: 2rem;
-}
 section{
     margin-top: 4rem;
+}
+
+article{
+    margin-top: 2rem;
 }
 
 .bloc-detall{
@@ -18,16 +17,15 @@ section{
     grid-template-rows: 1fr;
     grid-gap: 3rem;
 
-    .titol{
-        font-size: 1.5 rem;
-    }
     .intro{
         font-weight: bold;
     }
+
     .img-cover{
         width: 100%;
         background-size: cover;
     }
+
     .actor{
         display: flex;
         padding: 0.5rem;
@@ -43,6 +41,7 @@ section{
             width: 5rem;
             height: 5rem;
         }
+
         .img-actor-dav{
             width: 5rem;
             height: 5rem;
@@ -50,6 +49,7 @@ section{
             background-size: cover;
             border-radius: 2rem;
         }
+
         .img-actor-mik{
             width: 5rem;
             height: 5rem;
@@ -57,14 +57,18 @@ section{
             background-size: cover;
             border-radius: 2rem;
         }
+
         .actor-desc{
             width: calc(100% - 5rem);
             padding-left: 1rem;
             box-sizing: border-box;
         }
     }
+
     .premis{
+
         ul{
+
             li{
                 line-height: 2rem;
                 padding: 0.5rem;
@@ -72,12 +76,15 @@ section{
                 &:nth-child(even) {
                     background: #f1f1f1;
                 }
+
                 &:nth-child(odd) {
                         background: #fdfdfd;
                 }
+
                 .premi-no{
                     color: red;
                 }
+
                 .premi-si{
                     color: green;
                     font-weight: bold;
@@ -86,45 +93,50 @@ section{
             }
         }
     }
-
 }
 
 .altres-ant{
     flex-direction: column;
-    // align-items: flex-start;
     display: flex;
+
     img{
         width: 4rem;
         height: 4rem;
         margin-right: 2rem
     }
-        li{
-            
-            border-bottom: dotted 0.1rem #d1d1d1;
-            
-            &:hover{
-                background: #f1f1f1;
-            }
-            a{
-                div{
-                    display: flex;
-            padding-top: 0.5rem;
-            padding-bottom: 0.5rem;
-            line-height: 4rem;
-            width: 100%;
-                }
+
+    li{
+        
+        border-bottom: dotted 0.1rem #d1d1d1;
+        
+        &:hover{
+            background: #f1f1f1;
+        }
+
+        a{
+
+            div{
+                display: flex;
+                padding-top: 0.5rem;
+                padding-bottom: 0.5rem;
+                line-height: 4rem;
+                width: 100%;
             }
         }
+    }
 }
 
-@media screen and (min-width: 600px ) and (max-width: 992px ){
+
+
+@media screen and (min-width: $breakpoint-tablet ) and (max-width: $breakpoint-desktop ){
     .bloc-detall{
         display: block;
     }
 
 }
 
-@media screen and (max-width: 600px ){
+
+@media screen and (max-width: $breakpoint-tablet ){
     .bloc-detall{
         display: block;
         .actor{
@@ -144,5 +156,4 @@ section{
             }
         }
     }
-
 }

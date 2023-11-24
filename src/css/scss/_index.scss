@@ -1,3 +1,4 @@
+
 $tempsAnim: 3s;
 
 @keyframes fadein-text{
@@ -22,7 +23,6 @@ $tempsAnim: 3s;
 
 .bd-m{
     height: 100vh;
-
 }
 
 .hamb-index{
@@ -47,13 +47,13 @@ $tempsAnim: 3s;
     margin-top: auto;
     margin-bottom: auto;
     box-shadow: #909090 0px 0px 20px;
-    //max-width: 1250px;
-
     display: flex;
+
     .text-index{
         width: 100%;
         height: 100%;
     }
+
     .menu-dret{
         background-color: #fff;
         width: 30%;
@@ -62,27 +62,26 @@ $tempsAnim: 3s;
         align-items:center;
         z-index:1;
         transition: .3s;
+
         ul{
             width: 100%;
+
             li{
-                width: 100%;
-                position: relative;
-                color: #aaa;
-                height: 4rem;
-                display: flex;
-                align-items: center;
+                color: $bg-color;
                 box-sizing: border-box;
-                padding-left: 2rem;
                 text-transform: uppercase;
-                font-size:.7rem;
+                align-items: center;
+                width: 100%;
+                height: 4rem;
+                font-size: .7rem;
                 font-weight: bold;
-                padding-bottom: 0.2rem;
-                padding-top: 0.2rem;
-                letter-spacing: .1rem;
+                display: flex;
+                position: relative;
 
                 &:not(:last-child){
                     border-bottom: solid 1px #d2d2d2;
                 }
+
                 img{
                     height:70%;
                     aspect-ratio: 1;
@@ -91,16 +90,33 @@ $tempsAnim: 3s;
                     opacity: .5;
                     margin-right:.3rem;
                 }
-                &:not(:first-child):not(:last-child):hover{
-                    border-left: solid 3px #ddd;
+
+                &:not(:first-child):hover{
+                    border-top: solid 3px $color-fargo;
+                    border-bottom: solid 3px $color-fargo;
+                    background-color: #dee1ea10;
                     color: #000;
 
                     img{
                         opacity: 1;
                     }
                 }
+
                 a{
-                    color: #969696;
+                    color: #aaa;
+                    box-sizing: border-box;
+                    text-transform: uppercase;
+                    letter-spacing: .1rem;
+                    align-items: center;
+                    width: 100%;
+                    height: 4rem;
+                    padding-top: 0.2rem;
+                    padding-bottom: 0.2rem;
+                    padding-left: 1rem;
+                    font-size: .7rem;
+                    font-weight: bold;
+                    display: flex;
+                    position: relative;
                     &:hover{
                         color:#000;
                     }
@@ -109,13 +125,15 @@ $tempsAnim: 3s;
             
             .detall{
                 justify-content: flex-start;
+                padding-left: 1rem;
             }
+
             div.detall{
-                // justify-content: center;
                 display: flex;
                 margin-left: 1.5rem;
                 margin-top: 2rem;
             }
+
             div.detall div{
                 filter: grayscale(.8);
                 &:hover{
@@ -123,9 +141,9 @@ $tempsAnim: 3s;
                 }
             }
         }
+
         .fargo-typo-header{
-            padding-left: 2rem;
-            padding-bottom: 1rem
+            padding-bottom: 2rem
         }
         
     }
@@ -140,42 +158,49 @@ $tempsAnim: 3s;
         text-shadow: #fff 1px 0 10px, #fff 1px 0 10px;
 
         .info-button{
-            color: #790101cc;
+            color: $color-fargo;
             background-color: #0000;
             border: 3px solid;
             border-radius: 3rem;
-            height: 1rem;
             width: 10rem;
             margin-bottom: 1rem;
             margin-left: auto;
             margin-right: auto;
             padding: 1rem;
             font-weight: bold;
+            &:hover{
+                color:#fff;
+                border-color: $color-fargo;
+                background-color: $color-fargo;
+                text-shadow:none;
+            }
         }
-
 
         p{
             border: solid 1px;
         }
     }
 
-    .prime{
+    .prime, .hbo{
         width: 3rem;
         height: 3rem;
-        background-image: url(/src/media/prime-logo.png);
         background-size: cover;
         border: none;
         margin: .2rem;
+        border-radius:.5rem;
+        &:hover{
+            box-shadow: 0 0 10px $color-fargo;
+        }
+    }
+
+    .prime{
+        background-image: url(/src/media/prime-logo.png);
     }
 
     .hbo{
-        width: 3rem;
-        height: 3rem;
         background-image: url(/src/media/hbo-logo.png);
-        background-size: cover;
-        border: none;
-        margin: .2rem;
     }
+
     .text-i{
         position: relative;
         top: 50%;
@@ -185,45 +210,24 @@ $tempsAnim: 3s;
         width: 100%;
         text-align:center;
         letter-spacing: .05rem;
-        //left: 23%; 
-        //max-width: 40%;
         text-shadow: #fff 1px 0 10px, #fff 1px 0 10px;
         
     }
+
         .text1{
-            content: "THIS IS A TRUE STORY.";
-            
             animation-name: fadein-text;
             animation-duration: $tempsAnim;
             animation-delay: 0s;
         }
         
         .text1-true{
-            content: "THIS IS A TRUE STORY.";
             font-weight: bold;
             animation-name: fadein-text;
             animation-duration: $tempsAnim+1;
             animation-delay: 0s;
         } 
-        .hide{
-                visibility: hidden;
-            }
-        // .text2{
-        //     content: "At the request of the survivors, the names has been changed.";
-            
-        //     animation-name: fadein-text;
-        //     animation-duration: $tempsAnim;
-        //     animation-delay: $tempsAnim+.5;
-        // }
-        // .text3{
-        //     content: "Out of respect of the dead, the rest has been told exactly as it ocurred.";
-            
-        //     animation-name: fadein-text;
-        //     animation-duration: $tempsAnim;
-        //     animation-delay: $tempsAnim*2+.5;
-        // }
+       
         .text4{
-            content: "FARGO";
             font-size: 2rem;
             letter-spacing: 4rem;
             padding-left: 4rem;
@@ -238,11 +242,6 @@ $tempsAnim: 3s;
         }
         
         .text5{
-            //content: "FARGO";
-            // position: absolute;
-            // bottom: 3rem;
-            // font-size: 1rem;
-            // letter-spacing: 1rem;
             font-weight:400;
             color: rgba(121, 1, 1, 0.8);
             animation-name: fadein-text-info;
@@ -260,167 +259,38 @@ $tempsAnim: 3s;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-// ##########################CANVI TOT
-//MÒBIL
 .cover{
     position: absolute;
     top:0;
     left: 0;
     width:100%;
     height:140rem;
-    //height: 50rem;
-    //background: #f1f1f1;
-    //display:flex;
-    //flex-direction: column;
     align-items: center;
     justify-content: center;
-     // background-image: url(../media/cover-gel.png);
-    //background-image: url(../media/cartell-fargo2.jpg);
      background-image: url(../media/sang-neu-vertical.jpg);  
     background-size: cover;
     background-repeat: no-repeat;
-    //background-attachment: fixed;
 
     .text-intro{
         text-align: center;
-    letter-spacing: .3rem;
-    box-sizing: border-box;
-    width: 70%;
-    margin-top: 30rem;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 3rem;
-    font-weight: 700;
-    line-height: 4rem;
-    }
-
-    @keyframes fletxa-cover-bottom{
-        0%{
-            opacity: 0.9;
-        }
-        50%{
-            opacity: 0.2;
-        }
-        100%{
-            opacity: 0.9;
-        }
-    }
-    .cover-bottom{
-        position: absolute;
-        bottom:0;
-        width:100%;
-        height: 5rem;
-        line-height: 5rem;
-        color:#fff;
-        animation: fletxa-cover-bottom 3s infinite;
-        font-size: 5rem;
-        text-align: center;
-
-    }
-
-    .t_intro{
-        color:#000;
-        opacity: 0;
-        transition: 2s;
-    }
-
-    .t_intro_t{
-        opacity:0;
-        transition: 4s;
-    }
-    .mes-info{
-        border: 3px solid;
-        border-radius: 3rem;
-        line-height: 5rem;
-        text-align: center;
-        width: 90%;
-        height: 5rem;
+        letter-spacing: .3rem;
+        box-sizing: border-box;
+        width: 70%;
+        margin-top: 30rem;
         margin-left: auto;
-        font-weight: bold;
         margin-right: auto;
-        margin-top: 1rem;
-    }
-
-    .mes-info:first-of-type{
-        margin-top:10rem;
+        font-size: 3rem;
+        font-weight: 700;
+        line-height: 4rem;
     }
 }
 
+@media screen and (min-width: $breakpoint-tablet ) and (max-width: $breakpoint-desktop ) {
 
-#open-menu-header{
-    width: 4rem;
-    height: 4rem;
-    border-radius:50%;                  
-    background-color: #ddd;
-}   
-
-#close-menu-header{
-    width: 4rem;
-    height: 4rem;
-    border-radius:50%;
-    background-color: #ddd;
-}
-
-#menu-lateral-mb{
-    //display: none; //hidden
-    overflow: hidden;
-    position: fixed;
-    height:100%;
-    width:0%;
-    transition: .5s;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 10px 0px 200px 6px;
-    z-index: 999;
-}
-
-.item-head{
-    white-space: nowrap;
-    padding: 1.5rem;
-}
-
-.item-menu-lat{
-    padding: 4rem;
-    font-size: 4rem;;
-    min-width: 10rem;
-    height: 4rem;
-    border-bottom: solid 1px #ddd;
-    white-space: nowrap;
-}
-
-.fargo-typo-cover{
-    font-family: 'Open Sans', sans-serif;
-    color: #350000;
-    font-weight: 900;
-    letter-spacing: 6rem;
-    margin-right: -6rem;    //no afegir espaciat al final i mantenir text centrat
-    font-size: 3rem;
-}
-
-.plat{
-    width: 3rem;
-    height: 3rem;
-}
-
-
-
-@media screen and (min-width: 600px ) and (max-width: 992px ) {
     .cover-index{
         width: 100%;
         height: 100%;
+
         .menu-dret{
             width: 0;
             display: none;
@@ -431,7 +301,6 @@ $tempsAnim: 3s;
         }
     }
     
-    
     .text-info{
         display: block !important;
         width: 100% !important;
@@ -440,42 +309,53 @@ $tempsAnim: 3s;
     .hamb-index{
         display: block;
     }
+
     .mostra-i{
-        width: 100% !important;
+        position: absolute;
+        right: 0;
+        width: 40% !important;
         display: flex !important;
     }
     
-    @media (orientation: landscape) and (max-width: 1000px ){
-        .cover-index{
-            .text-i{
-                top: 40%;
-            }
-            .text-info{
-                bottom: 0.5rem !important;
-                width: 100% !important;
-            }
-            .menu-dret{
-                ul{
-                    li{
-                        height: 2rem;
-                    }                }
+
+
+@media (orientation: landscape) and (max-width: 1000px ){
+    .cover-index{
+        .text-i{
+            top: 40%;
+        }
+
+        .text-info{
+            bottom: 0.5rem !important;
+            width: 100% !important;
+        }
+
+        .menu-dret{
+            ul{
+                li{
+                    height: 3rem;
+                }                
             }
         }
-      }
+    }
+}
     
 }
 
-@media screen and (max-width: 600px ){
+@media screen and (max-width: $breakpoint-tablet){
     .cover-index{
         width: 100%;
         height: 100%;
+
         .menu-dret{
             width: 0;        
             display: none;
         }
+
         .text-i{
             width: 100%
         }
+        
         .text4{
             padding-left: 1.5rem;
             font-size: 1.5rem;
@@ -491,16 +371,16 @@ $tempsAnim: 3s;
     .hamb-index{
         display: block;
     }
+
     .mostra-i{
         width: 90% !important;
         position: absolute;
         right:0;
         display: flex !important;
     }
+
     .cover-index{
         background-image: url(/src/media/cover-ma-mobil.jpg);
         background-position-x: 100%;
-
     }
-
 }

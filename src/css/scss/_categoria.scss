@@ -3,7 +3,6 @@
     text-align: center;
 }
 
-
 .cover-ant{
     width: 100%;
     margin-left: auto;
@@ -14,25 +13,17 @@
     display:flex;
     align-items:center;
     justify-content: center;
+
     h1{
         letter-spacing: 5rem;
-    text-align: center;
-    color: #680000c9;
-    text-shadow: 0 0 20px #fff6;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    padding-left: 5rem;
-    font-size: 4rem;
+        text-align: center;
+        color: $color-fargo;
+        text-shadow: 0 0 20px #fff6;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 5rem;
+        font-size: 4rem;
     }
-}
-
-.m-rel{
-    position: relative;
-    bottom: 10rem;
-    .trg-personatge{
-        box-shadow: none !important;
-    }
-    
 }
 
 .cont-m{
@@ -67,10 +58,6 @@
     height: 15rem !important;
 }
 
-
-
-
-
 .menu-destacats{
     display:flex; 
     flex-wrap: wrap;
@@ -78,20 +65,18 @@
     align-items: center;
     
     .trg-personatge{
-    box-sizing: border-box;
-    width: 15rem;
-    min-height: 10rem;
-    margin-bottom: 0.5rem;
-    margin-left: 0.5rem;
-    margin-right: 0.5rem;
-    /* padding: 1rem; */
-    border-radius: 2rem;
-    box-shadow: 0 3px 10px #c7c7c7;
-    background-color: #000;
-    overflow: hidden;
+        box-sizing: border-box;
+        width: 15rem;
+        min-height: 10rem;
+        margin-bottom: 0.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        border-radius: 2rem;
+        box-shadow: 0 3px 10px #c7c7c7;
+        background-color: #000;
+        overflow: hidden;
 
         &:hover {
-            //box-shadow: 0 0px 0px 5px #900000;
             .info-personatge{
                 visibility:hidden;
             }
@@ -100,8 +85,8 @@
         .th-foto-personatge{
             width: 100%;
             aspect-ratio: 1/1;
-            // border-radius: 50%;
         }
+
         .info-personatge{
             width: 100%;
             height:100%;
@@ -110,6 +95,7 @@
             justify-content: center;
             background: rgba(0, 0, 0, 0.5);
         }
+
         .nom-personatge{
             text-transform: uppercase;
             font-size: 0.9rem;
@@ -117,6 +103,7 @@
             color: #ffffff;
             text-align: center;
         }
+
         .temporada{
             font-size: .6rem;
             text-transform: uppercase;
@@ -124,8 +111,8 @@
             text-align:center;
             margin-top: .4rem;
             margin-bottom: 1rem;
-
         }
+
         .descripcio-personatge{
             font-size: 0.8rem;
         }
@@ -136,37 +123,11 @@
     margin-bottom: 5rem;
 }
 
-.menu-altres-malvats{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    .trg{
-        width: 15rem;
-        display: flex;
-        background-color: #f1f1f1;
-        margin: .8rem;
-        // max-width: 5rem;
-
-        .foto{
-            object-fit: cover;
-            object-position: top;
-            width: 5rem;
-            height: 5rem;
-        }
-
-        .nom{
-            font-weight: bold;
-            display: flex;
-            font-size: .8rem;
-            align-items: center;
-            margin-left: 0.5rem;
-        }
-    }
-}
 
    
-@media screen and (min-width: 600px ) and (max-width: 992px ){
+
+
+@media screen and (min-width: $breakpoint-tablet ) and (max-width: $breakpoint-desktop ){
     
     .cover-ant{
 
@@ -178,7 +139,10 @@
     }
 }
 
-@media screen and (max-width: 600px){
+
+
+
+@media screen and (max-width: $breakpoint-tablet){
 
     .cover-ant{
 
@@ -190,9 +154,11 @@
     }
 
     .cont-m{
+
         .cont-img{
             display:none;
         }
+
         .cont-text{
             margin-left: auto;
             margin-right: auto;
@@ -201,6 +167,7 @@
             width: 90% !important;
         }
     }
+
     .al-ant{
         width: 90%;
         margin-left: auto;
