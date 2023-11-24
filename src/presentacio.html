@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css" >
     <script src="../node_modules/aos/dist/aos.js"></script>
     <link rel="stylesheet" href="./css/estils.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&family=Roboto:wght@300&display=swap" rel="stylesheet">
+
   </head>
 
 <body>
   <header>
-    <a href="index.html"><div class="fargo-typo-header">FARGO</div></a>
+    <a class="fargo-typo-header" href="index.html">FARGO</a>
     <div class="hamb" id="hamb-menu"></div>
     <nav class="menu-header">
       <ul>
@@ -41,44 +46,71 @@
         </ul>
     </div>
 
-  <main>
-    <div class="cover-pres" data-aos="fade-up">
-      <h1>FARGO</h1>
-    </div>
-    <div>
-      <div data-aos="fade-up" class="contingut">
-        <h2>Sobre Fargo</h2>
-        <p>"Fargo" és una sèrie de televisió produïda per FX Originals que es va estrenar el 15 d'abril de 2014 i va ser creada per Noah Hawley. Està basada en la pel·lícula amb el mateix nom dirigida per Joel i Ethan Coen el 1996. La sèrie comparteix l'esperit còmic i estrany de la pel·lícula però presenta històries noves i independents, així com personatges nous personatges a cada temporada.</p>
-        <p>Aquesta sèrie es pot incloure al gènere policial i manté una atmosfera distintiva pròpia que inclou elements d'humor negre, violència i intrigues criminals.</p>
-        <h3>"this is a true story"</h3>
-        <p>La frase "This is a true story" apareix a l'inici de cada episodi i s'utilitza com a eina narrativa per donar-li un to d'autenticitat a la sèrie malgrat l'afirmació no sigui certa. Aquest fet encaixa amb l'estil peculiar que caracteritza Fargo.</p>
-      </div>
-      <div class="secc-trailers" data-aos="fade-up">
-        <h2>Tràilers de cada temporada</h2>
-        <div class="cont-trailer">
-          <div class="menu-trailers">
-            <ul>
-              <li class="temporada1 selecc" id="temp1" onclick="canviaTrailer(1)"><div><span>Temporada</span> 1</div></li>
-              <li class="temporada2" id="temp2" onclick="canviaTrailer(2)"><div><span>Temporada</span> 2</div></li>
-              <li class="temporada3" id="temp3" onclick="canviaTrailer(3)"><div><span>Temporada</span> 3</div></li>
-              <li class="temporada4" id="temp4" onclick="canviaTrailer(4)"><div><span>Temporada</span> 4</div></li>
-              <li class="temporada5" id="temp5" onclick="canviaTrailer(5)"><div><span>Temporada</span> 5</div></li>
-            </ul>
-          </div>
-          <iframe id="div-trailer" class="cover-trailer" src="https://www.youtube.com/embed/xZCiyw1ZfB0?autoplay=1&mute=1&&showinfo=0" title="Fargo Season 1 Official Trailer 1 (2014) HD - FX TV Series" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  <main class="main-pres">
+
+    <div class="secc-trailers" data-aos="fade-up">
+      <div class="cont-trailer">
+        
+        <iframe id="div-trailer" class="cover-trailer" src="https://www.youtube.com/embed/xZCiyw1ZfB0?autoplay=1&mute=1&&showinfo=0" title="Fargo Season 1 Official Trailer 1 (2014) HD - FX TV Series" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <div class="menu-trailers">
+          <ul>
+            <li title="Tràiler de la 1a temporada" class="temporada1 selecc" id="temp1" onclick="canviaTrailer(1)"><div><span>Temporada</span> 1</div></li>
+            <li title="Tràiler de la 2a temporada" class="temporada1 selecc" class="temporada2" id="temp2" onclick="canviaTrailer(2)"><div><span>Temporada</span> 2</div></li>
+            <li title="Tràiler de la 3a temporada" class="temporada3" id="temp3" onclick="canviaTrailer(3)"><div><span>Temporada</span> 3</div></li>
+            <li title="Tràiler de la 5a temporada" class="temporada4" id="temp4" onclick="canviaTrailer(4)"><div><span>Temporada</span> 4</div></li>
+            <li title="Tràiler de la 5a temporada" class="temporada5" id="temp5" onclick="canviaTrailer(5)"><div><span>Temporada</span> 5</div></li>
+          </ul>
         </div>
       </div>
-      <div class="contingut pres-antag" data-aos="fade-up">
-        <h2>Antagonistes de Fargo</h2> 
-        <p>Un dels trets distintius de fargo són els persontages peculiars i complexos. Aquests personatges juntament amb l'imprevisibilitat de la trama fa de Fargo una sèrie única i singular.</p>
-        <a href="/src/categoria.html">
-          <div class="link-ant">SABER-NE MÉS</div>
-        </a>
+
+
+    <div class="cont-cont">
+
+      <div class="cont">
+        <div class="cont-img c-img1" data-aos="fade-right"></div>
+        <div class="cont-text c-text1" data-aos="fade-left">
+          <h2>Sobre Fargo</h2>
+
+          <p>"Fargo" és una sèrie de televisió produïda per FX Originals que es va estrenar el 15 d'abril de 2014 i va ser creada per Noah Hawley. Està basada en la pel·lícula amb el mateix nom dirigida per Joel i Ethan Coen el 1996. La sèrie comparteix l'esperit còmic i estrany de la pel·lícula però presenta històries noves i independents, així com personatges nous personatges a cada temporada.</p>
+        <p>Aquesta sèrie es pot incloure al gènere policial i manté una atmosfera distintiva pròpia que inclou elements d'humor negre, violència i intrigues criminals.</p>
+        
+        </div>
       </div>
-      <div class="menu-ant"  data-aos="fade-up">
-        <h3>Antagonistes destacats</h3>
+
+<div class="cont-true" data-aos="fade-up">
+  <h3>"this is a true story"</h3>
+        <p>La frase "This is a true story" apareix a l'inici de cada episodi i s'utilitza com a eina narrativa per donar-li un to d'autenticitat a la sèrie malgrat l'afirmació no sigui certa. Aquest fet encaixa amb l'estil peculiar de Fargo.</p>
+</div>
+
+
+      
+      <div class="cont">
+        <div class="cont-text c-text2"   data-aos="fade-right">
+          <h2>Estètica de Fargo</h2>
+
+          <p>La sèrie Fargo està ambientada a les regions fredes del nord dels <abbr title="Estats Units">EEUU</abbr> això influeix en l'estètica de la sèrie oferint paisatges hivernals on dominen els colors blanc, gris i negre contraposant-los amb freqüencia al color vermell de la sang. </p>
+          <p>Un altre tret característic de l'estètica de Fargo és l'utilització de grans plans panoràmics on es veuen els personatges o objectes molt allunyats de la camera. </p>
+
+        </div>
+        <div class="cont-img c-img2"   data-aos="fade-left"></div>
+        
+      </div>
+
+    </div>
+
+
+
+
+      <div class="presentacio-ant"  data-aos="fade-up">
+        <div class="d-text">
+          <h2>Personatges de Fargo</h2> 
+          <p>Un dels trets distintius de fargo són els persontages peculiars i complexos i, en especial, els antagonistes que solen ser carismàtics i intel·ligents. Aquests personatges juntament amb l'imprevisibilitat de la trama fa de Fargo una sèrie singular.</p>
+          <a class="link-ant" href="/src/categoria.html">
+            ANTAGONISTES DE FARGO
+          </a>
+        </div>
         <div class="menu-destacats">
-          <a href="detall-malvo.html" class="trg-personatge">
+          <a href="detall-malvo.html" class="trg-personatge mod-shad">
             <div>
               <div class="th-foto-personatge  f-perfil-malvo">
                 <div class="info-personatge">
@@ -89,31 +121,37 @@
               
             </div>
           </a>
-        <a href="detall-milligan.html" class="trg-personatge">  
+        <a href="detall-milligan.html" class="trg-personatge mod-shad">  
           <div>
             <div class="th-foto-personatge  f-perfil-milligan">
               <div class="info-personatge">
-            <div class="nom-personatge">Mike Milligan</div>
-            <div class="temporada">Temporades 2 i 4</div>
-          </div>
+                <div class="nom-personatge">Mike Milligan</div>
+                <div class="temporada">Temporades 2 i 4</div>
+              </div>
             </div>   
-            
-        </div>
+          </div>
         </a>
-        <a href="detall-varga.html" class="trg-personatge">
+
+        <a href="detall-varga.html" class="trg-personatge mod-shad">
           <div>
             <div class="th-foto-personatge f-perfil-vargas">
               <div class="info-personatge">
-              <div class="nom-personatge">V.M. Varga</div>
-              <div class="temporada">Temporada 3</div>    
-          </div>
+                <div class="nom-personatge">V.M. Varga</div>
+                <div class="temporada">Temporada 3</div>    
+              </div>
             </div>
-            
-        </div>
+          </div>
         </a>
       </div>
       </div>
-    </div>
+
+
+
+
+
+
+
+
   </main>
   <include src="./src/components/_footer.html"></include>
   <script src="./js/app.js"></script>

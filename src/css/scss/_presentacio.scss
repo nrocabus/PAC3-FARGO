@@ -8,11 +8,71 @@
     $breakpoint-desktop: 992px;
 
 // ### min-width: 992px
+
+
+
+
+.main-pres{
+    width: 100%;
+}
+
+.cont-true{
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: .8rem;
+    margin-bottom: 4rem;
+}
+
+.cont{
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem; 
+    margin-bottom: 10rem;
+    .cont-img{
+        aspect-ratio: 2;
+        background-size: cover;
+        border-radius: 1rem;
+        width: 50%;
+        position: relative;
+
+    }
+    .cont-text{
+        position:relative;
+       
+               top: 3rem; 
+        width: 40%;
+        height: 40%;
+        padding: 2rem;
+        border-radius: 2rem;
+        background-color: #cee4f0;
+        z-index:1;
+    }    
+    
+    .c-img1{
+        background-image: url(/src/media/cover9.jpg);        left: 5%;
+    }
+    .c-text1{
+        right: 5%;
+    }
+    
+    .c-text2{
+        left: 5%;
+    }
+    
+    .c-img2{
+        background-image: url(/src/media/cover-neu.png);        right: 5%;
+    }
+}
+
+
+
 .cover-pres{
     width: 100%;
     margin-left: auto;
     margin-right:auto;
-    height: 20rem;
+    height: 30rem;
     background-image: url(/src/media/cover-ma.jpg);
     background-size: cover;
     display:flex;
@@ -31,7 +91,6 @@
 }
 
 .secc-trailers{
-    margin-top: 5rem;
     
     .menu-trailers{
         min-height: 10rem;
@@ -79,9 +138,53 @@ h3{
     text-align: center;
 }
 
+
+.presentacio-ant{
+    width: 100%;
+    background-image: url(/src/media/cover-f4.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    margin-top: 7rem;
+    padding: 7rem 1rem;
+    color: #fffac3;
+    .d-text{
+        width: 25%;
+        margin-bottom: 4rem;
+        .link-ant{
+            color: #fffac3;
+            display: block;
+            width: fit-content;
+            padding: 1rem;
+            border: solid 1px;
+            border-radius: 2rem;
+            text-decoration: none;
+            margin-left: auto;
+            margin-right: auto;
+            &:hover{
+                background-color: #b30000;
+                border-color: #b30000;
+            }
+        }
+    }
+}
+
+.h1-ant{
+    text-align:center;
+    span{
+        font-weight: bold;
+    }
+}
+
+.mod-shad{
+    box-shadow: 0 0px 15px #fffac3 !important;
+}
+
+
 .pres-antag{
     text-align:center;
     text-transform: uppercase;
+    background-color: #000;
 
     a{
         display:block
@@ -224,7 +327,7 @@ h3{
     }
 
     .contingut{
-        width: 100%;
+        width: 75%;
     }
 
     .secc-trailers{
@@ -236,6 +339,15 @@ h3{
             }
         }
     }
+    
+.presentacio-ant{
+    display:block;
+    text-align: center;
+    box-sizing: border-box;
+    .d-text{
+        width:100%
+    }
+}
 }
 
 @media screen and (max-width: 600px){
@@ -275,7 +387,42 @@ h3{
             }
         }
     }
+
+    .cont{
+        margin-bottom:8rem;
+        .cont-img{
+            display:none;
+        }
+        .cont-text{
+            margin-left: auto;
+            margin-right: auto;
+            right: auto !important;
+            left: auto !important;
+            width: 90% !important;
+            
+        }
+        
+    }
+
+.cont-cont{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    .cont-true{
+            width: 70%;
+            margin-bottom: 0;
+        }
 }
+.presentacio-ant{
+    display:block;
+    text-align: center;
+    box-sizing: border-box;
+    .d-text{
+        width:100%
+    }
+}
+}
+
 
 
 

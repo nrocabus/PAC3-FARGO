@@ -26,15 +26,59 @@
     }
 }
 
+.m-rel{
+    position: relative;
+    bottom: 10rem;
+    .trg-personatge{
+        box-shadow: none !important;
+    }
+    
+}
+
+.cont-m{
+    margin-bottom: 1rem !important;
+}
+
+.c-temp1{
+    background-image: url(/src/media/temporada1.jpg);        
+    left: 5%;
+    width: 10rem !important;
+    height: 15rem !important;
+}
+
+.c-temp2{
+    background-image: url(/src/media/temporada2.jpg);        
+    right: 5%;
+    width: 10rem !important;
+    height: 15rem !important;
+}
+
+.c-temp3{
+    background-image: url(/src/media/temporada3.jpg);        
+    left: 5%;
+    width: 10rem !important;
+    height: 15rem !important;
+}
+
+.c-temp4{
+    background-image: url(/src/media/temporada4.jpg);        
+    right: 5%;
+    width: 10rem !important;
+    height: 15rem !important;
+}
+
+
+
+
 
 .menu-destacats{
     display:flex; 
     flex-wrap: wrap;
     justify-content: center;
-      
+    align-items: center;
     
     .trg-personatge{
-        box-sizing: border-box;
+    box-sizing: border-box;
     width: 15rem;
     min-height: 10rem;
     margin-bottom: 0.5rem;
@@ -143,5 +187,25 @@
             letter-spacing: 1.5rem;
             padding-left: 1.5rem;
         }
+    }
+
+    .cont-m{
+        .cont-img{
+            display:none;
+        }
+        .cont-text{
+            margin-left: auto;
+            margin-right: auto;
+            right: auto !important;
+            left: auto !important;
+            width: 90% !important;
+        }
+    }
+    .al-ant{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+        padding-bottom: 4rem;
     }
 }

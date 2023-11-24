@@ -131,9 +131,8 @@ $tempsAnim: 3s;
     }
     
     .text-info{
-        display: none;
         opacity:0;
-        width: 100%;
+        width: 70%;
         text-align:center;
         letter-spacing: .05rem;
         position: absolute;
@@ -179,7 +178,7 @@ $tempsAnim: 3s;
     }
     .text-i{
         position: absolute;
-        top: 60%;
+        top: 50%;
         box-sizing: border-box;
         padding: 0 1rem 0 1rem;
         opacity:0;
@@ -434,6 +433,7 @@ $tempsAnim: 3s;
     
     .text-info{
         display: block !important;
+        width: 100% !important;
     }
 
     .hamb-index{
@@ -450,7 +450,8 @@ $tempsAnim: 3s;
                 top: 40%;
             }
             .text-info{
-                bottom: 0 !important;
+                bottom: 0.5rem !important;
+                width: 100% !important;
             }
             .menu-dret{
                 ul{
@@ -483,6 +484,7 @@ $tempsAnim: 3s;
 
     .text-info{
         display: block !important;
+        width:100% !important;
     }
 
     .hamb-index{
