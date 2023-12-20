@@ -294,36 +294,6 @@
 
 
 
-        @media screen and (max-width: 600px){
-        .info-personatge{
-            grid-template-columns:1fr ;
-            grid-template-rows:repeat(2, 1fr) ;
-            .info{
-                max-width: 300px;
-            }
-        }
-        .cover-img{
-            .personatge-info{
-                .nom{
-                    font-size: 2rem;
-                    line-height: 2rem;
-                }
-            }
-            img{
-                object-position: 0 20%;
-            }
-        }
-        .p2_cover{
-            flex-direction: column;
-            align-items:center;
-            .imatge-clip{
-                width: 5rem;
-                height: 5rem;
-            }
-            .index-titol{
-                font-size: 4rem;
-                height: 4rem;
-            }
-        }
-
+    @media screen and (max-width: 600px){
+        
     }
