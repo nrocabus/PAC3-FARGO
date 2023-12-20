@@ -1,63 +1,68 @@
 <!doctype html>
 <html lang="ca">
 
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fargo i els seus Antagonistes</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">  
-    <link rel="stylesheet" href="./css/estils.css" >
-  </head>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fargo i els seus Antagonistes - Pàgina principal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/estils.css">
+</head>
 
-  <body class="bd-m">
+<body class="bd-m">
 
-    <include src="./src/components/_header.html"></include>
+  <include src="./src/components/_header.html"></include>
 
-    <!-- <div class="hamb-index" id="hamb-index"></div> -->
-    <div class="cover-fons"></div>
+  <div class="cover-fons"></div>
 
-    <img class="clip-cotxe" src="/src/media/PAC2/cover-f4.jpg" alt="">
+  <picture>
+    <source media="(max-width: 600px)" srcset="/src/media/PAC2/f2_mod3.webp" type="image/webp">
+    <source media="(max-width: 600px)" srcset="/src/media/PAC2/f2_mod3.webp?as=jpeg" type="image/jpeg">
 
-    <div class="cover-index">
-      <div class="text-index">
-        
-      <!-- <div class="index-titol">FARGO</div> -->
+    <source media="(max-width: 992px)" srcset="/src/media/PAC2/f2_mod3.webp" type="image/webp">
+    <source media="(max-width: 992px)" srcset="/src/media/PAC2/f2_mod3.webp?as=jpeg" type="image/jpeg">
 
-        <div class="text-i text1"><span>THIS IS A</span> <span class="text1-true">TRUE</span> <span>STORY.</span></div>
-        
-        <div class="text-i text4">FARGO<img class="imatge-clip"></div>
-        <div class="text-info text5">
-          <a href="presentacio.html"><div class="info-button">SABER-NE MÉS</div></a>
-          <div><a href="https://www.primevideo.com/-/es/detail/Fargo/0P9EK24RWP34IFGBAYYKI75GZE"><div class="prime"></div></a><a href="https://www.hbomax.com/es/en/series/urn:hbo:series:GYQLMSAZ6wRTCwgEAAAC1"><div class="hbo"></div></a></div>
+    <source media="(min-width: 992px)" srcset="/src/media/PAC2/cover_f4.webp" type="image/webp">
+    <source media="(min-width: 992px)" srcset="/src/media/PAC2/cover_f4.webp?as=jpeg" type="image/jpeg">
+
+    <img class="clip-cotxe" src="/src/media/PAC2/cover_f4.webp" alt="Clip path d'un cotxe de la dècada dels 50">
+  </picture>
+
+
+
+  <div class="cover-index">
+
+    <div class="text-index">
+
+      <div class="text-i text1"><span>THIS IS A</span> <span class="text1-true">TRUE</span> <span>STORY.</span></div>
+
+      <div class="text-i text4">FARGO<img class="imatge-clip" src="/src/media/temporada4.jpg"
+          alt="Póster de la quarta temporada amb un clip path que simula un barret i una arma de la època"></div>
+
+      <div class="text-info text5">
+
+        <a href="presentacio.html">
+          <div class="info-button">SABER-NE MÉS</div>
+        </a>
+
+        <div>
+          <a href="https://www.primevideo.com/-/es/detail/Fargo/0P9EK24RWP34IFGBAYYKI75GZE">
+            <div class="prime"></div>
+          </a><a href="https://www.hbomax.com/es/en/series/urn:hbo:series:GYQLMSAZ6wRTCwgEAAAC1">
+            <div class="hbo"></div>
+          </a>
         </div>
+      </div>
     </div>
-    <!-- <div class="menu-dret" id="nav-media-index">
-      <ul>
-        <li><a href="portada.html"><div class="fargo-typo-header">FARGO</div></a></li>
-        <li><a href="presentacio.html">Sobre la sèrie (Presentació)</a></li>
-        <li><a href="categoria.html">Antagonistes de Fargo (Categoria)</a></li>
-        <li class="detall"><img src="media/fperfilmalvo.jpg" alt="Foto del personatge Lorne Malvo"><a href="detall-malvo.html">Lorne Malvo (Detall)</a></li>
-        <li class="detall"><img src="media/fperfilmilligan.jpg" alt="Foto del personatge Mike Milligan"><a href="detall-milligan.html">Mike Milligan (Detall)</a></li>
-        <li class="detall"><img src="media/fperfilvargas.jpg" alt="Foto del personatge V. M. Vargas"><a href="detall-varga.html">V.M. Vargas (Detall)</a></li>
-        <li><a href="bibliografia.html">Recursos Multimèdia</a></li>
-      </ul>
-    </div> -->
 
+  </div>
 
-<!-- 
-  <svg  xmlns="http://www.w3.org/2000/svg" viewBox="-729.2878 89.163 1126.2509 693.7912">
-    
-</svg> -->
-
-  </div>    
-  
   <include src="./src/components/_footer.html"></include>
 
-    <script src="./js/app.js"></script>
+  <script src="./js/app.js"></script>
 
-  </body>
+</body>
+
 </html>
-
-

@@ -9,6 +9,7 @@
     text-align: center;
     font-size: .8rem;
     margin-bottom: 4rem;
+    color: #fff;
 }
 
 .cont{
@@ -127,23 +128,31 @@ h3{
     text-align: center;
 }
 
+.trailers{
+    margin-top: 6rem;
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+}
 
 .presentacio-ant{
     width: 100%;
-    background-image: url(/src/media/cover-f4.jpg);
-    background-size: cover;
+    // background-image: url(/src/media/PAC2/cover_s4.jpg);
+    // background-size: cover;
     display: flex;
     flex-direction: row;
-    margin-top: 7rem;
-    padding: 7rem 1rem;
-    color: #fffac3;
+    margin-top: 1rem;
+    padding: 1rem 1rem;
+    color: #fff;
 
     .d-text{
-        width: 25%;
+        width: 25%; 
+        margin: 0 auto;
         margin-bottom: 4rem;
+        text-align:center;
 
         .link-ant{
-            color: #fffac3;
+            color: #fff;
             display: block;
             width: fit-content;
             padding: 1rem;
@@ -163,6 +172,10 @@ h3{
 
 .mod-shad{
     box-shadow: 0 0px 15px #fffac3 !important;
+}
+
+.antag-s4{
+    width: 100%;
 }
 
 .pres-antag{
@@ -399,6 +412,7 @@ h3{
         .cont-true{
                 width: 70%;
                 margin-bottom: 0;
+                color:#fff;
             }
     }
 

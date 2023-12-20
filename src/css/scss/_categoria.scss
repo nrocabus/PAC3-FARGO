@@ -124,7 +124,53 @@
 }
 
 
-   
+.dest-mayflower{
+    display: flex;
+    width: 50%;
+    background: white;
+    margin: 0 auto;
+    color: #000;
+    justify-content: space-between;
+    border:solid .1px #fff;
+        transition: .2s;
+    img{
+        width: 70%;
+        max-width: 724px;
+        object-fit: cover;
+        clip-path: polygon(1% 1%, 90% 1%, 70% 99%, 1% 99%);
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &+p{
+            font-weight: black;
+        }
+        a{
+            border: 1px solid;
+            display: block;
+            width: 7rem;
+            padding: 0.7rem;
+            text-align: center;
+            &:hover{
+                background: $color-fargo;
+                color: #fff;
+            }
+        }
+
+    }
+
+    &:hover{
+        border:solid 10px #fff;
+        img{
+            clip-path: polygon(1% 1%, 99% 1%, 80% 99%, 1% 99%);
+            transition: .2s;
+
+
+        }
+    }
+
+}
 
 
 @media screen and (min-width: $breakpoint-tablet ) and (max-width: $breakpoint-desktop ){
@@ -135,6 +181,27 @@
             font-size: 2rem;
             letter-spacing: 3rem;
             padding-left: 3rem;
+        }
+    }
+
+    .dest-mayflower{
+        flex-direction: column;
+        max-width: 724px;
+        img{
+            clip-path: polygon(1% 1%, 99% 1%, 99% 80%, 1% 70%);
+            width: 100%;
+        }
+        div{
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            align-items:center;
+
+
+        }
+        &:hover{
+            img{
+                clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 89%);
+                
+            }
         }
     }
 }
@@ -175,4 +242,26 @@
         overflow: hidden;
         padding-bottom: 4rem;
     }
+
+    .dest-mayflower{
+        flex-direction: column;
+        max-width: 724px;
+        img{
+            clip-path: polygon(1% 1%, 99% 1%, 99% 80%, 1% 70%);
+            width: 100%;
+        }
+        div{
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            align-items:center;
+
+
+        }
+        &:hover{
+            img{
+                clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 89%);
+                
+            }
+        }
+    }
+
 }

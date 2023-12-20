@@ -31,6 +31,7 @@
 
 .sobre-fargo-svg{
     display: flex;
+    align-items:center;
 }
 
 .p2_cover{
@@ -215,12 +216,12 @@
     display: block;
     max-width: 100%;
     border-radius: 3rem;
-    left: 2rem;
+    margin-left: 2rem;
 }
 .text-descripcio-mayflower{
     width: 700px;
     aspect-ratio: calc(3/2);
-    background: #191919ee;
+    background: #76a28f;
     color: #f1f1f1;
     border-radius: 3rem;
     margin-top: -20rem;
@@ -228,7 +229,7 @@
     margin-left: auto;
     box-sizing: border-box;
     padding: 2rem;
-
+    margin-right: 3rem;
 
 }
 
@@ -250,21 +251,25 @@
   }
 
   .info-actor{
+    
     display: flex;
     justify-content: center;
-
+    width: 80%;
+    margin: 5rem auto 0 auto;
         .text{
             max-width: 70%;
             align-items: center;
             box-sizing: border-box;
             padding: 2rem;
+            color: #fff;
         }
   }
 
     .imatge-actriu{
 
         display: block;
-        max-width: 100%;
+        max-width: 200px;
+        max-height: 200px;
         // object-fit:cover;
         // object-position: 0% 20%;
 
