@@ -24,7 +24,8 @@
     "postcss": "^8.4.31",
     "posthtml-include": "^1.7.4",
     "rimraf": "^5.0.5",
-    "sass": "^1.69.5"
+    "sass": "^1.69.5",
+    "sharp": "^0.31.3"
   },
   "dependencies": {
     "aos": "^2.3.4"
