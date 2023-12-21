@@ -66,7 +66,7 @@ figure{
 header{
     width: 100%;
     padding: 0 7% 0 7%;
-    max-width: 1400px;
+    // max-width: 1400px;
     height: 4rem;
     margin: 0 auto;
     display:flex;
@@ -274,6 +274,12 @@ footer{
     background-size: cover;
 }
 
+@media screen and (min-width: 1400){
+    header{
+        padding-left: calc((100% - 1400px) /2);
+
+    }
+}
 
 @media screen and (min-width: $breakpoint-tablet ) and (max-width: $breakpoint-desktop ) {
     
