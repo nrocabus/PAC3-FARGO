@@ -1,77 +1,15 @@
+//moviment de balanceig del cotxe
 @keyframes bot{
     50%{transform: translate(-165.992px, -78.4311px);}
 }
 
+//Acceleració del cotxe
 @keyframes acc{
     90%{transform: translate(-58.992px, 0px);}
 }
 
-
-#carrosseria{
-    animation: bot 2000ms linear infinite normal forwards;
-}
-
-#eA57qgCQrZY1{
-    width: 12rem;
-    &:hover{
-        
-            animation: acc 500ms linear normal forwards;
-            #carrosseria{
-                animation: none;
-            }
-        #eA57qgCQrZY26 {
-            animation: eA57qgCQrZY26_c_o 2000ms linear infinite normal forwards;
-            animation-delay: .5s;
-          }
-        
-          #eA57qgCQrZY27 {
-            animation: eA57qgCQrZY27_c_o 2000ms linear infinite normal forwards;
-            animation-delay: .5s;
-          }
-          
-          #eA57qgCQrZY28 {
-            animation: eA57qgCQrZY28_c_o 2000ms linear infinite normal forwards;
-            animation-delay: .5s;
-          }
-        
-          #eA57qgCQrZY29 {
-            animation: eA57qgCQrZY29_c_o 2000ms linear infinite normal forwards;
-            animation-delay: .5s;
-          }
-    }
-    &:hover > #eA57qgCQrZY37_tr{
-        animation: eA57qgCQrZY37_tr__tr 2000ms linear infinite normal forwards;
-        animation-delay: .5s;
-    }
-    &:hover > #eA57qgCQrZY40_tr {
-         animation: eA57qgCQrZY40_tr__tr 2000ms linear infinite normal forwards;
-         animation-delay: .5s;
-      }
-}
-
-//     &:hover{
-//         animation: none;
-//         #eA57qgCQrZY26, #eA57qgCQrZY27, #eA57qgCQrZY28,  #eA57qgCQrZY29{
-//             visibility: visible;
-//         }
-//     }    
-//     #container:hover ~ g{
-        
-//     }
-//         #eA57qgCQrZY37_tr {
-//             animation: eA57qgCQrZY37_tr__tr_lent 2000ms linear infinite normal forwards;
-//         }
-//         #eA57qgCQrZY40_tr {
-//             animation: eA57qgCQrZY40_tr__tr_lent 2000ms linear infinite normal forwards;
-//         }
-    
-// }
-
-
-
-
-
-  @keyframes eA57qgCQrZY26_c_o {
+// llums sirena
+@keyframes llum-blau-petit {
     0% {
       opacity: 0.02
     }
@@ -94,7 +32,7 @@
   }
 
 
-  @keyframes eA57qgCQrZY27_c_o {
+  @keyframes llum-vermell-petit {
     0% {
       opacity: 0
     }
@@ -113,7 +51,7 @@
   }
 
 
-  @keyframes eA57qgCQrZY28_c_o {
+  @keyframes llum-vermell-gran {
     0% {
       opacity: 0
     }
@@ -134,10 +72,9 @@
       opacity: 0.233333
     }
   }
-
  
 
-  @keyframes eA57qgCQrZY29_c_o {
+  @keyframes llum-blau-gran {
     0% {
       opacity: 0
     }
@@ -155,14 +92,10 @@
     }
   }
 
-  #eA57qgCQrZY37_tr {
-    animation: eA57qgCQrZY37_tr__tr 12000ms linear infinite normal forwards
-  }
- #eA57qgCQrZY40_tr {
-    animation: eA57qgCQrZY40_tr__tr 12000ms linear infinite normal forwards
-  }
 
-  @keyframes eA57qgCQrZY37_tr__tr {
+  //moviment rodes
+
+@keyframes roda-davant {
     0% {
       transform: translate(163.677px, 73.6188px) rotate(0deg)
     }
@@ -171,7 +104,8 @@
       transform: translate(163.677px, 73.6188px) rotate(3600deg)
     }
   }
-  @keyframes eA57qgCQrZY40_tr__tr {
+
+  @keyframes roda-darrere {
     0% {
       transform: translate(58.074px, 73.3624px) rotate(0deg)
     }
@@ -181,3 +115,57 @@
     }
   }
   
+
+#carrosseria{
+    animation: bot 2000ms linear infinite normal forwards;
+}
+
+#eA57qgCQrZY1{
+    width: 12rem;
+    &:hover{
+        
+            animation: acc 500ms linear normal forwards;
+            #carrosseria{
+                animation: none;
+            }
+        #eA57qgCQrZY26 {
+            animation: llum-blau-petit 2000ms linear infinite normal forwards;
+            animation-delay: .5s;
+          }
+        
+          #eA57qgCQrZY27 {
+            animation: llum-vermell-petit 2000ms linear infinite normal forwards;
+            animation-delay: .5s;
+          }
+          
+          #eA57qgCQrZY28 {
+            animation: llum-vermell-gran 2000ms linear infinite normal forwards;
+            animation-delay: .5s;
+          }
+        
+          #eA57qgCQrZY29 {
+            animation: llum-blau-gran 2000ms linear infinite normal forwards;
+            animation-delay: .5s;
+          }
+    }
+    &:hover > #eA57qgCQrZY37_tr{
+        animation: roda-davant 2000ms linear infinite normal forwards;
+        animation-delay: .5s;
+    }
+    &:hover > #eA57qgCQrZY40_tr {
+         animation: roda-darrere 2000ms linear infinite normal forwards;
+         animation-delay: .5s;
+      }
+}
+
+  
+
+
+  #eA57qgCQrZY37_tr {
+    animation: roda-davant 12000ms linear infinite normal forwards
+  }
+ #eA57qgCQrZY40_tr {
+    animation: roda-darrere 12000ms linear infinite normal forwards
+  }
+
+
