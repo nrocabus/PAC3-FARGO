@@ -50,7 +50,6 @@ $tempsAnim: 3s;
     z-index: -1;
 }
 
-
 .cover-index{
     width: 86%;
     height: 86vh;
@@ -268,6 +267,20 @@ $tempsAnim: 3s;
     
 }
 
+.logo {
+    background-size: contain;
+    width: 6rem;
+    height: 3rem;
+    background-color: $color-fargo;
+    -webkit-mask: url(/src/media/PAC2/logo-negre.svg) no-repeat center;
+    mask: url(/src/media/PAC2/logo-negre.svg) no-repeat center;
+}
+
+.cont-logo {
+    display: flex;
+    align-items: center;
+}
+
 
 .cover{
     position: absolute;
@@ -446,17 +459,6 @@ $tempsAnim: 3s;
         grid-template-rows:repeat(2, 1fr) ;
         .info{
             max-width: 300px;
-        }
-    }
-    .cover-img{
-        .personatge-info{
-            .nom{
-                font-size: 2rem;
-                line-height: 2rem;
-            }
-        }
-        img{
-            object-position: 0 20%;
         }
     }
 

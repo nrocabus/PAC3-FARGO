@@ -8,7 +8,7 @@
     margin-left: auto;
     margin-right:auto;
     height: 20rem;
-    background-image: url(/src/media/PAC2/02_FX_Fargo_S4_Loy_130_w.jpg);
+    background-image: url(/src/media/PAC2/pont1400.webp);
     background-size: cover;
     display:flex;
     align-items:center;
@@ -133,13 +133,19 @@
     justify-content: space-between;
     border:solid .1px #fff;
         transition: .2s;
-    img{
-        width: 70%;
+    picture{
+        width: 60%;
+        img{
+        width: 100%;
+        height: 100%;
         max-width: 724px;
         object-fit: cover;
         clip-path: polygon(1% 1%, 90% 1%, 70% 99%, 1% 99%);
     }
+    }
+    
     div{
+        width: 40%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -162,12 +168,14 @@
 
     &:hover{
         border:solid 10px #fff;
-        img{
+        picture{
+            img{
             clip-path: polygon(1% 1%, 99% 1%, 80% 99%, 1% 99%);
             transition: .2s;
 
 
-        }
+        }}
+        
     }
 
 }
@@ -187,21 +195,26 @@
     .dest-mayflower{
         flex-direction: column;
         max-width: 724px;
-        img{
+        picture{
+            width: 100%;
+            img{
             clip-path: polygon(1% 1%, 99% 1%, 99% 80%, 1% 70%);
             width: 100%;
-        }
+        }}
+        
         div{
             padding: 0 1.5rem 1.5rem 1.5rem;
             align-items:center;
-
-
+            width: 100%;
+            text-align: center;
+            box-sizing: border-box;
         }
         &:hover{
-            img{
+            picture{img{
                 clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 89%);
                 
-            }
+            }}
+            
         }
     }
 }
@@ -245,22 +258,28 @@
 
     .dest-mayflower{
         flex-direction: column;
-        max-width: 724px;
-        img{
+        width: 90%;
+        //max-width: 724px;
+        picture{
+            width: 100%;
+            img{
             clip-path: polygon(1% 1%, 99% 1%, 99% 80%, 1% 70%);
             width: 100%;
-        }
+        }}
+        
         div{
             padding: 0 1.5rem 1.5rem 1.5rem;
             align-items:center;
-
-
+            width: 100%;
+            box-sizing: border-box;
+text-align: center;
         }
         &:hover{
-            img{
+            picture{img{
                 clip-path: polygon(1% 1%, 99% 1%, 99% 99%, 1% 89%);
                 
-            }
+            }}
+            
         }
     }
 

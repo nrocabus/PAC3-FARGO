@@ -21,7 +21,6 @@
     .cont-img{
         aspect-ratio: 2;
         background-size: cover;
-        border-radius: 1rem;
         width: 50%;
         position: relative;
     }
@@ -35,11 +34,15 @@
         border-radius: 2rem;
         background-color: #cee4f0;
         z-index:1;
+        overflow: hidden;
     }    
     
     .c-img1{
-        background-image: url(/src/media/cover9.jpg);        
-        left: 5%;
+        width: 100%;
+        position: relative;
+        border-radius: 1rem;
+        left: 10%;
+        
     }
 
     .c-text1{
@@ -51,7 +54,10 @@
     }
     
     .c-img2{
-        background-image: url(/src/media/cover-neu.png);        right: 5%;
+        width: 100%;
+        position: relative;
+        border-radius: 1rem;
+        right: 10%;
     }
 }
 
@@ -144,7 +150,7 @@ h3{
     margin-top: 1rem;
     padding: 1rem 1rem;
     color: #fff;
-
+    box-sizing: border-box;
     .d-text{
         width: 25%; 
         margin: 0 auto;
@@ -269,7 +275,8 @@ h3{
 }
 
 .cover-trailer{
-    width: 100%;
+    width: 98%;
+    margin-left: 1%;
     aspect-ratio: 16/9;
 }
 
@@ -311,6 +318,15 @@ h3{
     opacity: 1 !important;
 }
 
+#svg_anim {
+    animation: anim_clippath 12s infinite cubic-bezier(.5, 0, 0, 1);
+}
+
+.sobre-fargo-svg {
+    display: flex;
+    align-items: center;
+}
+
 
 @media screen and (min-width: $breakpoint-tablet ) and (max-width: $breakpoint-desktop ){
     
@@ -343,7 +359,7 @@ h3{
         box-sizing: border-box;
         
         .d-text{
-            width:100%
+            width:35%
         }
     }
 }
@@ -420,7 +436,8 @@ h3{
         display:block;
         text-align: center;
         box-sizing: border-box;
-        
+        width: 70%;
+        margin: 0 auto;
         .d-text{
             width:100%
         }
