@@ -43,7 +43,7 @@ $tempsAnim: 3s;
     top:0;
     width: 100vw;
     min-height: 100vh;
-    background-image: url(../media/PAC2/cover_f4.webp);
+    background-image: url(../media/cover_f4.webp);
     background-size: cover;
     background-position: center;
     filter: blur(.5rem);
@@ -273,8 +273,8 @@ $tempsAnim: 3s;
     width: 6rem;
     height: 3rem;
     background-color: $color-fargo;
-    -webkit-mask: url(/src/media/PAC2/logo-negre.svg) no-repeat center;
-    mask: url(/src/media/PAC2/logo-negre.svg) no-repeat center;
+    -webkit-mask: url(/src/media/logo-negre.svg) no-repeat center;
+    mask: url(/src/media/logo-negre.svg) no-repeat center;
 }
 
 .cont-logo {
@@ -325,7 +325,7 @@ $tempsAnim: 3s;
     left: 10%;
     top:20%;
 
-    --svg: url(/src/media/PAC2/CLIPPATH-COTXE.svg);
+    --svg: url(/src/media/CLIPPATH-COTXE.svg);
     -webkit-mask-image: var(--svg);
     mask-image: var(--svg);
     mask-repeat: no-repeat;
