@@ -209,6 +209,10 @@ $tempsAnim: 3s;
         background-image: url(/src/media/hbo-logo.png);
     }
 
+    .assitive-text{
+        height: 1px; width: 1px; position: absolute; overflow: hidden; top: -10px; 
+    }
+
     .prime:hover, .hbo:hover{
         cursor: pointer;
     }
