@@ -1,6 +1,9 @@
 //moviment de balanceig del cotxe
 @keyframes bot{
-    50%{transform: translate(-165.992px, -78.4311px);}
+    0%{transform: translate(-166px, -75px)}
+    50%{transform: translate(-166px, -78px);}
+    100%{transform: translate(-166px, -75px)}
+
 }
 
 //Acceleració del cotxe
@@ -11,11 +14,11 @@
 // llums sirena
 @keyframes llum-blau-petit {
     0% {
-      opacity: 0.02
+      opacity: 0
     }
 
     25% {
-      opacity: 0.02
+      opacity: 0
     }
 
     35% {
@@ -65,11 +68,11 @@
     }
 
     75% {
-      opacity: 0.233333
+      opacity: 0.25
     }
 
     100% {
-      opacity: 0.233333
+      opacity: 0.25
     }
   }
  
@@ -117,7 +120,7 @@
   
 
 #carrosseria{
-    animation: bot 2000ms linear infinite normal forwards;
+    animation: bot 1000ms linear infinite normal forwards;
 }
 
 #eA57qgCQrZY1{
