@@ -7,6 +7,8 @@ function desplegaIndex() {
     document.getElementById("nav-media-index").classList.toggle("mostra-i");
 }
 
+
+
 function canviaTrailer(num) {
     let url1 = "https://www.youtube.com/embed/xZCiyw1ZfB0?autoplay=1&mute=1&&showinfo=0";
     let title1 = "Fargo Season 1 Official Trailer 1 (2014) HD - FX TV Series";

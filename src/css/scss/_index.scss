@@ -46,8 +46,8 @@ $tempsAnim: 3s;
     background-image: url(../media/cover_f4.webp);
     background-size: cover;
     background-position: center;
-    filter: blur(.5rem);
-    -webkit-filter: blur(.5rem);
+    filter: blur(4.5rem);
+    -webkit-filter: blur(4.5rem);
     z-index: -1;
 }
 
@@ -177,10 +177,11 @@ $tempsAnim: 3s;
             margin-right: auto;
             padding: 1rem;
             font-weight: bold;
+            border: solid 3px #fff;
             &:hover{
-                color:#fff;
-                background-color: $color-fargo;
-                border: solid 3px #fff;
+                color:$color-fargo;
+                background-color: #fff;
+                border: solid 3px $color-fargo;
             }
         }
 
@@ -213,7 +214,7 @@ $tempsAnim: 3s;
 
     .text-i{
         position: relative;
-        top: 40%;
+        top: 10%;
         box-sizing: border-box;
         padding: 0 1rem 0 1rem;
         opacity:0;
@@ -241,17 +242,19 @@ $tempsAnim: 3s;
         } 
        
         .text4{
-            font-size: 11rem;
-            letter-spacing: -1rem;
-            padding-left: 4rem;
+            letter-spacing: 0rem;
             box-sizing: border-box;
-            font-weight:bold;
-            color: rgba(141, 5, 27, 0.8);
+            color: #fff;
+            padding-left: 4rem;
+            font-size: 13rem;
+            font-weight: bold;
             animation-name: fadein-text-final;
-            animation-duration: $tempsAnim;
-            animation-delay: ($tempsAnim+.5);
+            animation-duration: 3s;
+            animation-delay: 3.5s;
             animation-fill-mode: forwards;
         }
+
+        
         
         .text5{
             font-weight:400;
@@ -260,7 +263,7 @@ $tempsAnim: 3s;
             animation-duration: 1s;
             animation-delay: ($tempsAnim+1s);
             animation-fill-mode: forwards;
-
+            z-index:2;
             div{
                 display: flex;
                 justify-content: center;
@@ -331,9 +334,32 @@ $tempsAnim: 3s;
     -webkit-mask-image: var(--svg);
     mask-image: var(--svg);
     mask-repeat: no-repeat;
-    mask-size:100%;
-    mask-position:center;
+    // mask-size:100%;
+    // mask-position:center;
+
+    mask-size: 45%;
+    mask-position: 48.5% 84%;
 }
+
+.clip-home{
+    position: absolute;
+    width: 80%;
+    max-width: 1200px;
+    left: 10%;
+    top:20%;
+    z-index:1;
+    --svg: url(/src/media/clip-home-cover.svg);
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    mask-repeat: no-repeat;
+    // mask-size:100%;
+    // mask-position:center;
+
+    mask-size: 20.5%;
+    mask-position: 49.5% 73%;
+}
+
+
 
 @media screen and (min-width: 1400px){
     .clip-cotxe{
