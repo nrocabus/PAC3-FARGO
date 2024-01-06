@@ -338,7 +338,8 @@ $tempsAnim: 3s;
 
 .clip-cotxe{
     position: absolute;
-    width: 80%;
+    max-width: 80%;
+    height:auto;
    // max-width: 1200px;
     left: 10%;
     top:20%;
@@ -362,7 +363,8 @@ $tempsAnim: 3s;
 
 .clip-home{
     position: absolute;
-    width: 90%;
+    max-width: 90%;
+    height:auto;
     transition: .7s;
     //max-width: 1200px;
     left: 5%;
@@ -389,12 +391,14 @@ $tempsAnim: 3s;
 .main-cover{
     margin: 0;
     max-width: none;
+    aspect-ratio: 2.5;
 }
 
 @media screen and (min-width: 1400px){
     .clip-cotxe{
         // left: calc(50% - 600px);
         width: 1200px;
+        max-width:none;
         left: calc(50% - 600px);
     }
     .clip-home{

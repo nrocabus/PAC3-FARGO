@@ -13,10 +13,11 @@ function desplegaIndex() {
     
     setTimeout(()=>{
         document.getElementById("clip-home").style.transform = "translate(0px, -20px)";
-        document.getElementById("clip-cotxe").style.transform = "translate(0px, -5px)";
+        document.getElementById("clip-cotxe").style.transform = "translate(0px, -5px)";    
+        document.onmousemove = handleMouseMove;
+
     }, 4000)
 
-    document.onmousemove = handleMouseMove;
 
     function handleMouseMove(event) {
         // var eventDoc, doc, body;

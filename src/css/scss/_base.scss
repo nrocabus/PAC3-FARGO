@@ -316,8 +316,18 @@ footer{
     }
 
 
+    @media (max-width: 1000px) and (min-aspect-ratio: 1.5) {
 
-    @media (orientation: landscape) {
+        footer{
+            margin-top: 10rem;
+            padding-top:15rem;
+        }
+    }
+
+
+    @media only screen and (min-device-width: 480px) and (max-device-width: 640px) and (orientation: landscape) {
+        
+    
         header .menu-nav-media ul li{
             height: 3rem;
         }
