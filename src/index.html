@@ -17,22 +17,33 @@
 
   <include src="./src/components/_header.html"></include>
 
+  <main class="main-cover">
+
   <div class="cover-fons"></div>
 
   <picture>
-    <source media="(max-width: 600px)" srcset="/src/media/f2_mod3.webp" type="image/webp">
-    <source media="(max-width: 600px)" srcset="/src/media/f2_mod3.webp?as=jpeg" type="image/jpeg">
-
-    <source media="(max-width: 992px)" srcset="/src/media/f2_mod3.webp" type="image/webp">
-    <source media="(max-width: 992px)" srcset="/src/media/f2_mod3.webp?as=jpeg" type="image/jpeg">
-
+    <source media="(max-width: 600px)" srcset="/src/media/cover-f4-600.webp" type="image/webp">
+    <source media="(max-width: 600px)" srcset="/src/media/cover-f4-600.webp?as=jpeg" type="image/jpeg">
+    <source media="(max-width: 992px)" srcset="/src/media/cover-f4-992.webp" type="image/webp">
+    <source media="(max-width: 992px)" srcset="/src/media/cover-f4-992.webp?as=jpeg" type="image/jpeg">
     <source media="(min-width: 992px)" srcset="/src/media/cover-f4-desk.webp" type="image/webp">
     <source media="(min-width: 992px)" srcset="/src/media/cover-f4-desk.webp?as=jpeg" type="image/jpeg">
-
     <img id="clip-cotxe" class="clip-cotxe" src="/src/media/cover-f4-desk.webp" alt="Clip path d'un cotxe de la dècada dels 50">
   </picture>
+
+  <!-- falt posar imatges més petites per mides de pantalla menors a cotxe i home-->
+
+  <picture>
+    <source media="(max-width: 600px)" srcset="/src/media/cover-f4-600.webp" type="image/webp">
+    <source media="(max-width: 600px)" srcset="/src/media/cover-f4-600.webp?as=jpeg" type="image/jpeg">
+    <source media="(max-width: 992px)" srcset="/src/media/cover-f4-992.webp" type="image/webp">
+    <source media="(max-width: 992px)" srcset="/src/media/cover-f4-992.webp?as=jpeg" type="image/jpeg">
+    <source media="(min-width: 992px)" srcset="/src/media/cover-f4-desk.webp" type="image/webp">
+    <source media="(min-width: 992px)" srcset="/src/media/cover-f4-desk.webp?as=jpeg" type="image/jpeg">
+    <img id="clip-home" class="clip-home" src="/src/media/cover-f4-desk.webp" alt="Clip path d'un home aguantant una arma">
+  </picture>
+
     <!-- Faltaria posar-ho dins un picture VVV -->
-  <img id="clip-home" class="clip-home" src="/src/media/cover-f4-desk.webp" alt="Clip path d'un home aguantant una arma">
 
 
 
@@ -69,6 +80,7 @@
     </div>
  
   </div>
+</main>
 
   <include src="./src/components/_footer.html"></include>
 

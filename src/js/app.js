@@ -11,9 +11,15 @@ function desplegaIndex() {
 
 (function() {
     
+    setTimeout(()=>{
+        document.getElementById("clip-home").style.transform = "translate(0px, -20px)";
+        document.getElementById("clip-cotxe").style.transform = "translate(0px, -5px)";
+    }, 4000)
+
     document.onmousemove = handleMouseMove;
+
     function handleMouseMove(event) {
-        var eventDoc, doc, body;
+        // var eventDoc, doc, body;
 
         event = event || window.event; // IE-ism        //########borrar i provar a IE
 
@@ -39,17 +45,21 @@ function desplegaIndex() {
         // console.log(event.pageX);
         // console.log(window.innerHeight);
         // console.log(event.pageY / window.innerHeight * 100)
-        const MAX_desv = 10;
+        const MAX_desv = 5;
         let desv_x = (event.pageX / window.innerWidth)*(MAX_desv*2)-MAX_desv;
         let desv_y = (event.pageY / window.innerHeight)*(MAX_desv*2)-MAX_desv;
         console.log("x: "+desv_x)
         console.log("y: "+desv_y)
-        document.getElementById("clip-home").style.setProperty("top", "calc(20% + "+desv_y+"px)");
-        document.getElementById("clip-home").style.setProperty("left", "calc(5% + "+desv_x+"px)");
+        // document.getElementById("clip-home").style.setProperty("top", "calc(20% + "+desv_y+"px)");
+        // document.getElementById("clip-home").style.setProperty("left", "calc(5% + "+desv_x+"px)");
+console.log(desv_x)
+        document.getElementById("clip-home").style.transform = "translate("+desv_x+"px, "+desv_y+"px)";
+        // document.getElementById("clip-home").style.webkitTransform = "translate()";
+        
+        document.getElementById("clip-cotxe").style.transform = "translate("+desv_x/2+"px, "+desv_y/2+"px)";
 
-        document.getElementById("clip-cotxe").style.setProperty("top", "calc(20% + "+desv_y/2+"px)");
-        document.getElementById("clip-cotxe").style.setProperty("left", "calc(10% + "+desv_x/2+"px)");
-
+        // document.getElementById("clip-cotxe").style.setProperty("top", "calc(20% + "+desv_y/2+"px)");
+        // document.getElementById("clip-cotxe").style.setProperty("left", "calc(10% + "+desv_x/2+"px)");
         
 
         // document.getElementById("clip-cotxe").style.top =

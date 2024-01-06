@@ -22,6 +22,19 @@ $tempsAnim: 3s;
     }
 }
 
+@keyframes upClipHome{
+    100%{
+        transform: translateY(-10px)
+    }
+}
+
+@keyframes upClipCotxe{
+    100%{
+        transform: translateY(-5px)
+    }
+}
+
+
 .bd-m{
     min-height: 100vh;
 }
@@ -214,7 +227,7 @@ $tempsAnim: 3s;
 
     .text-i{
         position: relative;
-        top: 10%;
+        top: 20%;
         box-sizing: border-box;
         padding: 0 1rem 0 1rem;
         opacity:0;
@@ -326,10 +339,10 @@ $tempsAnim: 3s;
 .clip-cotxe{
     position: absolute;
     width: 80%;
-    max-width: 1200px;
+   // max-width: 1200px;
     left: 10%;
     top:20%;
-
+    transition: .7s;
     --svg: url(/src/media/CLIPPATH-COTXE.svg);
     -webkit-mask-image: var(--svg);
     mask-image: var(--svg);
@@ -339,12 +352,19 @@ $tempsAnim: 3s;
 
     mask-size: 45%;
     mask-position: 48.5% 84%;
+
+    // animation-name: upClipCotxe;
+    // animation-delay: $tempsAnim+1;
+    // animation-duration: 1s;
+    // animation-delay: ($tempsAnim+1s);
+    // animation-fill-mode: forwards;
 }
 
 .clip-home{
     position: absolute;
     width: 90%;
-    max-width: 1200px;
+    transition: .7s;
+    //max-width: 1200px;
     left: 5%;
     top:20%;
     z-index:1;
@@ -357,12 +377,28 @@ $tempsAnim: 3s;
 
     mask-size: 20.5%;
     mask-position: 49.5% 73%;
+
+    // animation-name: upClipHome;
+    // animation-delay: $tempsAnim+1;
+    // animation-duration: 1s;
+    // animation-delay: ($tempsAnim+1s);
+    // animation-fill-mode: forwards;
+
 }
 
-
+.main-cover{
+    margin: 0;
+    max-width: none;
+}
 
 @media screen and (min-width: 1400px){
     .clip-cotxe{
+        // left: calc(50% - 600px);
+        width: 1200px;
+        left: calc(50% - 600px);
+    }
+    .clip-home{
+        width: 1200px;
         left: calc(50% - 600px);
     }
 }
@@ -381,6 +417,7 @@ $tempsAnim: 3s;
         .text-i{
             width: 100%;
             top: 40%;
+            z-index: 4;
         }
         .text4{
             font-size: 8rem;
@@ -406,6 +443,14 @@ $tempsAnim: 3s;
         width: 40% !important;
         display: flex !important;
     }
+    .clip-cotxe{
+        mask-position: 53% 89%;
+        mask-size: 98.7%;
+    }
+    .clip-home{
+        mask-position: 52.5% 73%;
+        mask-size: 46%;
+    }
     
 
 @media only screen and (min-device-width: 480px) and (max-device-width: 640px) and (orientation: landscape) {
@@ -429,7 +474,7 @@ $tempsAnim: 3s;
             }
         }
     }
-    
+
 }
 
 @media screen and (max-width: $breakpoint-tablet){
@@ -438,10 +483,16 @@ $tempsAnim: 3s;
         margin: 0 auto;
     }
 
-
-    footer{
-        padding-top: 15rem;
+        
+    .clip-cotxe{
+        mask-position: 53% 89%;
+        mask-size: 98.7%;
     }
+    .clip-home{
+        mask-position: 52.5% 73%;
+        mask-size: 46%;
+    }
+
     .cover-index{
         width: 100%;
         height: 60vh;
@@ -454,14 +505,14 @@ $tempsAnim: 3s;
 
 
         .text-i{
-            width: 100%
+            width: 100%;
+            z-index: 4;
         }
         
         .text4{
             padding-left: 1.5rem;
-            font-size: 7rem;
+            font-size: 5rem;
             line-height: 7rem;
-            letter-spacing: -.5rem;
         }
         .text-info{
         display: block !important;
