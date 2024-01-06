@@ -316,13 +316,13 @@ footer{
     }
 
 
-    @media (max-width: 1000px) and (min-aspect-ratio: 1.5) {
+    // @media (max-width: 1000px) and (min-aspect-ratio: 1.5) {
 
-        footer{
-            margin-top: 10rem;
-            padding-top:15rem;
-        }
-    }
+    //     footer{
+    //         margin-top: 10rem;
+    //         padding-top:15rem;
+    //     }
+    // }
 
 
     @media only screen and (min-device-width: 480px) and (max-device-width: 640px) and (orientation: landscape) {
@@ -364,7 +364,7 @@ footer{
     footer{
         padding-left: 0; 
         text-align: center;
-        padding-top: 7rem;
+        // padding-top: 7rem;
         
         ul{
             flex-direction: column;

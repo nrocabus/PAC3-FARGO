@@ -391,7 +391,7 @@ $tempsAnim: 3s;
 .main-cover{
     margin: 0;
     max-width: none;
-    aspect-ratio: 2.5;
+    height: 879px;
 }
 
 @media screen and (min-width: 1400px){
@@ -408,6 +408,9 @@ $tempsAnim: 3s;
 }
 
 @media screen and (min-width: $breakpoint-tablet ) and (max-width: $breakpoint-desktop ) {
+    .main-cover{
+        height: 1065px;
+    }
 
     .cover-index{
         width: 100%;
@@ -482,6 +485,11 @@ $tempsAnim: 3s;
 }
 
 @media screen and (max-width: $breakpoint-tablet){
+
+    .main-cover{
+        height: 644px;
+    }
+
     .imatge-clip{
         display:block;
         margin: 0 auto;
