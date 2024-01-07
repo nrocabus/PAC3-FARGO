@@ -17,7 +17,7 @@ $tempsAnim: 3s;
     //     bottom: 0;
     // }
     100% {
-        transform: translateY(-2.5rem);
+        transform: translateY(-3rem);
         opacity:1
     }
 }
@@ -244,14 +244,12 @@ $tempsAnim: 3s;
     }
 
         .text1{
-            will-change: opacity;
             animation-name: fadein-text;
             animation-duration: $tempsAnim;
             animation-delay: 0s;
         }
         
         .text1-true{
-            will-change: opacity;
             font-weight: bold;
             animation-name: fadein-text;
             animation-duration: $tempsAnim+1;
@@ -259,13 +257,15 @@ $tempsAnim: 3s;
         } 
        
         .text4{
-            will-change: opacity;
             letter-spacing: 0rem;
             box-sizing: border-box;
             color: #fff;
             padding-left: 4rem;
             font-size: 13rem;
             font-weight: bold;
+
+            will-change: opacity, transform;
+            
             animation-name: fadein-text-final;
             animation-duration: 3s;
             animation-delay: 3.5s;
@@ -275,7 +275,6 @@ $tempsAnim: 3s;
         
         
         .text5{
-            will-change: opacity transform;
             font-weight:400;
             color: rgba(121, 1, 1, 0.8);
             animation-name: fadein-text-info;
