@@ -33,26 +33,32 @@ function canviaTrailer(num) {
     switch (num) {
         
         case 1: {
+            console.log("REMOVE!")
+            document.getElementById("div-trailer").removeAttribute("srcdoc");
             document.getElementById("div-trailer").src = url1;
             document.getElementById("div-trailer").title = title1;
             break;
         }
         case 2: {
+            document.getElementById("div-trailer").removeAttribute("srcdoc");
             document.getElementById("div-trailer").src = url2;
             document.getElementById("div-trailer").title = title2;
             break;
         }
         case 3: {
+            document.getElementById("div-trailer").removeAttribute("srcdoc");
             document.getElementById("div-trailer").src = url3;
             document.getElementById("div-trailer").title = title3;
             break;
         }
         case 4: {
+            document.getElementById("div-trailer").removeAttribute("srcdoc");
             document.getElementById("div-trailer").src = url4;
             document.getElementById("div-trailer").title = title4;
             break;
         }
         case 5: {
+            document.getElementById("div-trailer").removeAttribute("srcdoc");
             document.getElementById("div-trailer").src = url5;
             document.getElementById("div-trailer").title = title5;
             break;

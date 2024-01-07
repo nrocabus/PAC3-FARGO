@@ -39,6 +39,7 @@
     
     .c-img1{
         width: 100%;
+        height: auto;
         position: relative;
         border-radius: 1rem;
         left: 10%;
@@ -55,6 +56,7 @@
     
     .c-img2{
         width: 100%;
+        height: auto;
         position: relative;
         border-radius: 1rem;
         right: 10%;
@@ -278,6 +280,8 @@ h3{
     width: 98%;
     margin-left: 1%;
     aspect-ratio: 16/9;
+    background-image: url(/src/media/fargo-s2-llarga.webp);
+    background-size: cover;
 }
 
 .temporada1{
