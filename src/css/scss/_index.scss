@@ -13,14 +13,16 @@ $tempsAnim: 3s;
     }
 
 @keyframes fadein-text-info{
-    0% {
-        bottom: 0;
-    }
+    // 0% {
+    //     bottom: 0;
+    // }
     100% {
-        bottom: 6rem;
+        transform: translateY(-2.5rem);
         opacity:1
     }
 }
+
+
 
 @keyframes upClipHome{
     100%{
@@ -242,12 +244,14 @@ $tempsAnim: 3s;
     }
 
         .text1{
+            will-change: opacity;
             animation-name: fadein-text;
             animation-duration: $tempsAnim;
             animation-delay: 0s;
         }
         
         .text1-true{
+            will-change: opacity;
             font-weight: bold;
             animation-name: fadein-text;
             animation-duration: $tempsAnim+1;
@@ -255,6 +259,7 @@ $tempsAnim: 3s;
         } 
        
         .text4{
+            will-change: opacity;
             letter-spacing: 0rem;
             box-sizing: border-box;
             color: #fff;
@@ -270,6 +275,7 @@ $tempsAnim: 3s;
         
         
         .text5{
+            will-change: opacity transform;
             font-weight:400;
             color: rgba(121, 1, 1, 0.8);
             animation-name: fadein-text-info;
