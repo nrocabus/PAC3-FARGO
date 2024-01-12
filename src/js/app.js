@@ -1,5 +1,4 @@
 function desplega() {
-    
     document.getElementById("nav-media").classList.toggle("mostra");
 }
 
