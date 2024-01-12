@@ -6,9 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Informació sobre els antagonistes de Fargo</title>  
     <link rel="icon" type="image/x-icon" href="/src/media/favicon.ico">  
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap"></noscript>
+
     <link rel="stylesheet" href="../node_modules/aos/dist/aos.css">
-    <script src="../node_modules/aos/dist/aos.js"></script>
+    <script src="../node_modules/aos/dist/aos.js"></script>    
+    
+    <link rel="preload" href="./css/estils.css" as="style">
     <link rel="stylesheet" href="./css/estils.css">
+
+    <script defer src="./js/app.js"></script>
     
   </head>
 
@@ -17,7 +27,6 @@
     
 
   <include src="./src/components/_header.html"></include>
-
 
 
 
@@ -41,7 +50,7 @@
         <source media="(min-width: 992px)" srcset="/src/media/fargo-jessie-buckley.webp?as=avif" type="image/avif">
         <source media="(min-width: 992px)"  srcset="/src/media/fargo-jessie-buckley.webp?as=jpeg" type="image/jpeg">
 
-        <img src="/src/media/fargo-jessie-buckley.webp" loading="lazy" alt="Imatge del personatge Oraetta Mayflower">
+        <img src="/src/media/fargo-jessie-buckley.webp" alt="Imatge del personatge Oraetta Mayflower">
     </picture>
     
 
@@ -52,8 +61,8 @@
 
 
 
-    <img src="/src/media/mayflower-1400.jpeg?as=webp" srcset="/src/media/mayflower-1400.jpeg?as=webp 1400w, /src/media/mayflower-600.jpeg?as=webp 600w, /src/media/mayflower-300.jpeg?as=webp 300w"  loading="lazy" class="imatge-2" sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px, 800px" alt="Imatge del personatge Oraetta Mayflower">
-    <div class="text-descripcio-mayflower">
+    <img src="/src/media/mayflower-1400.jpeg?as=webp" srcset="/src/media/mayflower-1400.jpeg?as=webp 1400w, /src/media/mayflower-600.jpeg?as=webp 600w, /src/media/mayflower-300.jpeg?as=webp 300w" class="imatge-2" sizes="(max-width: 600px) 300px, (max-width: 1200px) 600px, 800px" alt="Imatge del personatge Oraetta Mayflower"  data-aos="fade-right">
+    <div class="text-descripcio-mayflower"  data-aos="fade-left">
         <p>Oraetta Mayflower</p>
         <p>L'Oraetta Mayflower és una de les antagonistes de la temporada 4 de fargo i té incidència directa en la guerra entre màfies que es desencadena a Dakota del Sud malgrat no tenir relació amb cap d'elles.</p>
         <p>Es presenta com una infermera ordinària i excèntrica amb una aparença agradable, però darrere aquesta façana s'amaga una realitat molt més fosca. Mayflower resulta ser una psicòpata que disfruta matant els seus pacients dels quals sempre en guarda alguna pertinença com a  record. Un d'aquests pacients als que mata és el cap de la màfia italo-americana de la zona, fet que indirectament desencadena la guerra entre màfies que es desenvoluparà durant la temporada.</p>
@@ -63,7 +72,7 @@
   
 
 
-  <div class="info-actor">
+  <div class="info-actor"  data-aos="fade-up">
     <img src="/src/media/buckley_gran.png" srcset="/src/media/buckley_petita.png 1x, /src/media/buckley_mitjana.png 2x, /src/media/buckley_gran.png 3x" loading="lazy" class="imatge-actriu" alt="Imatge de l'actriu Jessie Buckley">
     <div class="text">
         <p>Jessie Buckley</p>
@@ -92,11 +101,9 @@
 
   <include src="./src/components/_footer.html"></include>
 
-  <script src="./js/app.js"></script>
-  <script>
-    AOS.init(); 
-  </script>
 
+
+  <script>AOS.init();</script>
 </body>
 </html>
 
