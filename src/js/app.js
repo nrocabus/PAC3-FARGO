@@ -19,7 +19,7 @@ function canviaTrailer(num) {
     let title3 = "Fargo | Installment 3: Official Trailer | FX";
     let url4 = "https://www.youtube.com/embed/RLEwtys6yZw?autoplay=1&mute=1&&showinfo=0";
     let title4 = "FARGO Installment 4 Official Trailer (HD) Chris Rock";
-    let url5 = "https://www.youtube.com/watch?v=8ZdK87tfv6k?autoplay=1&mute=1&&showinfo=0";
+    let url5 = "https://www.youtube.com/embed/8ZdK87tfv6k?autoplay=1&mute=1&&showinfo=0";
     let title5 = "Fargo Season 5 Trailer";
 
     document.getElementById("temp1").classList.remove('selecc');
