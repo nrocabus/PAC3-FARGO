@@ -26,99 +26,6 @@
     }
 }
 
-.cont-m{
-    margin-bottom: 1rem !important;
-}
-
-.c-temp1{
-    background-image: url(/src/media/temporada1.jpg);        
-    left: 5%;
-    width: 10rem !important;
-    height: 15rem !important;
-}
-
-.c-temp2{
-    background-image: url(/src/media/temporada2.jpg);        
-    right: 5%;
-    width: 10rem !important;
-    height: 15rem !important;
-}
-
-.c-temp3{
-    background-image: url(/src/media/temporada3.jpg);        
-    left: 5%;
-    width: 10rem !important;
-    height: 15rem !important;
-}
-
-.c-temp4{
-    background-image: url(/src/media/temporada4.jpg);        
-    right: 5%;
-    width: 10rem !important;
-    height: 15rem !important;
-}
-
-.menu-destacats{
-    display:flex; 
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    
-    .trg-personatge{
-        box-sizing: border-box;
-        width: 15rem;
-        min-height: 10rem;
-        margin-bottom: 0.5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        border-radius: 2rem;
-        box-shadow: 0 3px 10px #c7c7c7;
-        background-color: #000;
-        overflow: hidden;
-
-        &:hover {
-            .info-personatge{
-                visibility:hidden;
-            }
-        }
-
-        .th-foto-personatge{
-            width: 100%;
-            aspect-ratio: 1/1;
-        }
-
-        .info-personatge{
-            width: 100%;
-            height:100%;
-            display:flex;
-            flex-direction: column;
-            justify-content: center;
-            background: rgba(0, 0, 0, 0.5);
-        }
-
-        .nom-personatge{
-            text-transform: uppercase;
-            font-size: 0.9rem;
-            font-weight: 700;
-            color: #ffffff;
-            text-align: center;
-        }
-
-        .temporada{
-            font-size: .6rem;
-            text-transform: uppercase;
-            color: #aaa;
-            text-align:center;
-            margin-top: .4rem;
-            margin-bottom: 1rem;
-        }
-
-        .descripcio-personatge{
-            font-size: 0.8rem;
-        }
-    }
-}
-
 .pres-ant{
     margin-bottom: 5rem;
 }
@@ -230,29 +137,6 @@
             letter-spacing: 1.5rem;
             padding-left: 1.5rem;
         }
-    }
-
-    .cont-m{
-
-        .cont-img{
-            display:none;
-        }
-
-        .cont-text{
-            margin-left: auto;
-            margin-right: auto;
-            right: auto !important;
-            left: auto !important;
-            width: 90% !important;
-        }
-    }
-
-    .al-ant{
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        overflow: hidden;
-        padding-bottom: 4rem;
     }
 
     .dest-mayflower{

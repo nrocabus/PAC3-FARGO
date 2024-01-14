@@ -1,131 +1,4 @@
 
-section{
-    margin-top: 4rem;
-}
-
-article{
-    margin-top: 2rem;
-}
-
-.bloc-detall{
-
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 1fr .5fr;
-    grid-template-rows: 1fr;
-    grid-gap: 3rem;
-
-    .intro{
-        font-weight: bold;
-    }
-
-    .img-cover{
-        width: 100%;
-        background-size: cover;
-    }
-
-    .actor{
-        display: flex;
-        padding: 0.5rem;
-        margin-top:3rem;
-        background:#f1f1f1;
-        border-radius: 2rem;
-        align-items: center;
-
-        .img-actor-tho{
-            background-image: url("../media/BillyBobThornton(portrait).jpg");
-            background-size: cover;
-            border-radius: 2rem;
-            width: 5rem;
-            height: 5rem;
-        }
-
-        .img-actor-dav{
-            width: 5rem;
-            height: 5rem;
-            background-image: url("../media/david-thewlis.jpg");
-            background-size: cover;
-            border-radius: 2rem;
-        }
-
-        .img-actor-mik{
-            width: 5rem;
-            height: 5rem;
-            background-image: url("../media/mike-p.jpg");
-            background-size: cover;
-            border-radius: 2rem;
-        }
-
-        .actor-desc{
-            width: calc(100% - 5rem);
-            padding-left: 1rem;
-            box-sizing: border-box;
-        }
-    }
-
-    .premis{
-
-        ul{
-
-            li{
-                line-height: 2rem;
-                padding: 0.5rem;
-
-                &:nth-child(even) {
-                    background: #f1f1f1;
-                }
-
-                &:nth-child(odd) {
-                        background: #fdfdfd;
-                }
-
-                .premi-no{
-                    color: red;
-                }
-
-                .premi-si{
-                    color: green;
-                    font-weight: bold;
-                    text-decoration: underline;
-                }
-            }
-        }
-    }
-}
-
-.altres-ant{
-    flex-direction: column;
-    display: flex;
-
-    img{
-        width: 4rem;
-        height: 4rem;
-        margin-right: 2rem
-    }
-
-    li{
-        
-        border-bottom: dotted 0.1rem #d1d1d1;
-        
-        &:hover{
-            background: #f1f1f1;
-        }
-
-        a{
-
-            div{
-                display: flex;
-                padding-top: 0.5rem;
-                padding-bottom: 0.5rem;
-                line-height: 4rem;
-                width: 100%;
-            }
-        }
-    }
-}
-
 
 .titol-nom{
     color: #fff;
@@ -178,22 +51,6 @@ article{
     }
 }
 
-.detall-cover {
-    height: auto;
-    position: inherit;
-    padding: 0;
-    box-shadow: none;
-
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    aspect-ratio: 2;
-    background: #f1f1f1;
-    background-image: url("/src/media/fargo-jessie-buckley.webp");
-    background-size: cover;
-    background-position: center;
-}
-
 .personatge-info {
     width: 50%;
     height: 100%;
@@ -214,23 +71,6 @@ article{
     }
 }
 
-.info-personatge {
-    margin-top: 10rem;
-    width: 100%;
-    aspect-ratio: 3;
-    background: #191919;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-
-    .info {
-
-        max-width: 100%;
-        background-color: #191919;
-    }
-}
 
 
 .imatge-2 {
@@ -257,7 +97,6 @@ article{
 .info-actriu {
     margin-top: 10rem;
     width: 100%;
-    //aspect-ratio: 3;
     background: #191919;
     margin-left: auto;
     margin-right: auto;
@@ -293,9 +132,6 @@ article{
 }
 
 @media screen and (min-width: $breakpoint-tablet ) and (max-width: $breakpoint-desktop ){
-    .bloc-detall{
-        display: block;
-    }
 
     .text-descripcio-mayflower{
         margin: 0 auto !important;
@@ -312,8 +148,6 @@ article{
         aspect-ratio: initial !important;
         width: 70% !important;
     }
-
-
     .imatge-actriu{
         width: 200px;
         height: 200px;
@@ -323,7 +157,6 @@ article{
 
 .info-actor{
     width: 100% !important;
-    //margin: 0 auto !important;
     flex-direction: column !important;
     align-items:center;
 }
@@ -337,25 +170,6 @@ article{
 
 
 @media screen and (max-width: $breakpoint-tablet ){
-    .bloc-detall{
-        display: block;
-        .actor{
-            flex-direction: column;
-            align-items: center;
-            .img-actor-tho, .img-actor-mik, .img-actor-dav{
-                width: 10rem;
-                height: 15rem;
-                position: relative;
-                bottom: 2rem;
-                border-radius: 2rem;
-            }
-            .actor-desc{
-                margin-top:.5rem;
-                width: 100%;
-                padding: 0 1rem 2rem 1rem;
-            }
-        }
-    }
     
     .text-descripcio-mayflower{
         margin: 0 auto !important;
@@ -392,7 +206,6 @@ article{
     width:100% !important;
     padding-top: 6rem!important;
 }
-
 
 .cover-img{
     .personatge-info{

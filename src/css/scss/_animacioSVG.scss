@@ -1,174 +1,179 @@
-//moviment de balanceig del cotxe
-@keyframes bot{
-    0%{transform: translate(-166px, -75px)}
-    50%{transform: translate(-166px, -78px);}
-    100%{transform: translate(-166px, -75px)}
+@keyframes bot {
+  0% {
+    transform: translate(-166px, -75px)
+  }
+
+  50% {
+    transform: translate(-166px, -78px);
+  }
+
+  100% {
+    transform: translate(-166px, -75px)
+  }
 
 }
 
-//Acceleració del cotxe
-@keyframes acc{
-    90%{transform: translate(-58.992px, 0px);}
+@keyframes acc {
+  90% {
+    transform: translate(-58.992px, 0px);
+  }
 }
 
-// llums sirena
 @keyframes llum-blau-petit {
-    0% {
-      opacity: 0
-    }
-
-    25% {
-      opacity: 0
-    }
-
-    35% {
-      opacity: 1
-    }
-
-    50% {
-      opacity: 0
-    }
-
-    100% {
-      opacity: 0
-    }
+  0% {
+    opacity: 0
   }
 
-
-  @keyframes llum-vermell-petit {
-    0% {
-      opacity: 0
-    }
-
-    75% {
-      opacity: 0
-    }
-
-    85% {
-      opacity: 1
-    }
-
-    100% {
-      opacity: 0
-    }
+  25% {
+    opacity: 0
   }
 
-
-  @keyframes llum-vermell-gran {
-    0% {
-      opacity: 0
-    }
-
-    50% {
-      opacity: 0
-    }
-
-    60% {
-      opacity: 1
-    }
-
-    75% {
-      opacity: 0.25
-    }
-
-    100% {
-      opacity: 0.25
-    }
-  }
- 
-
-  @keyframes llum-blau-gran {
-    0% {
-      opacity: 0
-    }
-
-    10% {
-      opacity: 1
-    }
-
-    25% {
-      opacity: 0
-    }
-
-    100% {
-      opacity: 0
-    }
+  35% {
+    opacity: 1
   }
 
+  50% {
+    opacity: 0
+  }
 
-  //moviment rodes
+  100% {
+    opacity: 0
+  }
+}
+
+@keyframes llum-vermell-petit {
+  0% {
+    opacity: 0
+  }
+
+  75% {
+    opacity: 0
+  }
+
+  85% {
+    opacity: 1
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+
+@keyframes llum-vermell-gran {
+  0% {
+    opacity: 0
+  }
+
+  50% {
+    opacity: 0
+  }
+
+  60% {
+    opacity: 1
+  }
+
+  75% {
+    opacity: 0.25
+  }
+
+  100% {
+    opacity: 0.25
+  }
+}
+
+
+@keyframes llum-blau-gran {
+  0% {
+    opacity: 0
+  }
+
+  10% {
+    opacity: 1
+  }
+
+  25% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 0
+  }
+}
+
+
+//moviment rodes
 
 @keyframes roda-davant {
-    0% {
-      transform: translate(163.677px, 73.6188px) rotate(0deg)
-    }
-
-    100% {
-      transform: translate(163.677px, 73.6188px) rotate(3600deg)
-    }
+  0% {
+    transform: translate(163.677px, 73.6188px) rotate(0deg)
   }
 
-  @keyframes roda-darrere {
-    0% {
-      transform: translate(58.074px, 73.3624px) rotate(0deg)
-    }
-
-    100% {
-      transform: translate(58.074px, 73.3624px) rotate(3600deg)
-    }
+  100% {
+    transform: translate(163.677px, 73.6188px) rotate(3600deg)
   }
-  
-
-#carrosseria{
-    animation: bot 1000ms linear infinite normal forwards;
 }
 
-#eA57qgCQrZY1{
-    width: 12rem;
-    &:hover{
-        
-            animation: acc 500ms linear normal forwards;
-            #carrosseria{
-                animation: none;
-            }
-        #eA57qgCQrZY26 {
-            animation: llum-blau-petit 2000ms linear infinite normal forwards;
-            animation-delay: .5s;
-          }
-        
-          #eA57qgCQrZY27 {
-            animation: llum-vermell-petit 2000ms linear infinite normal forwards;
-            animation-delay: .5s;
-          }
-          
-          #eA57qgCQrZY28 {
-            animation: llum-vermell-gran 2000ms linear infinite normal forwards;
-            animation-delay: .5s;
-          }
-        
-          #eA57qgCQrZY29 {
-            animation: llum-blau-gran 2000ms linear infinite normal forwards;
-            animation-delay: .5s;
-          }
-    }
-    &:hover > #eA57qgCQrZY37_tr{
-        animation: roda-davant 2000ms linear infinite normal forwards;
-        animation-delay: .5s;
-    }
-    &:hover > #eA57qgCQrZY40_tr {
-         animation: roda-darrere 2000ms linear infinite normal forwards;
-         animation-delay: .5s;
+@keyframes roda-darrere {
+  0% {
+    transform: translate(58.074px, 73.3624px) rotate(0deg)
+  }
+
+  100% {
+    transform: translate(58.074px, 73.3624px) rotate(3600deg)
+  }
+}
+
+
+#carrosseria {
+  animation: bot 1000ms linear infinite normal forwards;
+}
+
+#eA57qgCQrZY1 {
+  width: 12rem;
+
+  &:hover {
+      animation: acc 500ms linear normal forwards;
+      #carrosseria {
+        animation: none;
       }
+
+    #eA57qgCQrZY26 {
+      animation: llum-blau-petit 2000ms linear infinite normal forwards;
+      animation-delay: .5s;
+    }
+
+    #eA57qgCQrZY27 {
+      animation: llum-vermell-petit 2000ms linear infinite normal forwards;
+      animation-delay: .5s;
+    }
+
+    #eA57qgCQrZY28 {
+      animation: llum-vermell-gran 2000ms linear infinite normal forwards;
+      animation-delay: .5s;
+    }
+
+    #eA57qgCQrZY29 {
+      animation: llum-blau-gran 2000ms linear infinite normal forwards;
+      animation-delay: .5s;
+    }
+  }
+
+  &:hover>#eA57qgCQrZY37_tr {
+    animation: roda-davant 2000ms linear infinite normal forwards;
+    animation-delay: .5s;
+  }
+
+  &:hover>#eA57qgCQrZY40_tr {
+    animation: roda-darrere 2000ms linear infinite normal forwards;
+    animation-delay: .5s;
+  }
 }
 
-  
+#eA57qgCQrZY37_tr {
+  animation: roda-davant 12000ms linear infinite normal forwards
+}
 
-
-  #eA57qgCQrZY37_tr {
-    animation: roda-davant 12000ms linear infinite normal forwards
-  }
- #eA57qgCQrZY40_tr {
-    animation: roda-darrere 12000ms linear infinite normal forwards
-  }
-
-
+#eA57qgCQrZY40_tr {
+  animation: roda-darrere 12000ms linear infinite normal forwards
+}

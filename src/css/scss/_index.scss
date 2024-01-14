@@ -13,16 +13,12 @@ $tempsAnim: 3s;
     }
 
 @keyframes fadein-text-info{
-    // 0% {
-    //     bottom: 0;
-    // }
+
     100% {
         transform: translateY(-3rem);
         opacity:1
     }
 }
-
-
 
 @keyframes upClipHome{
     100%{
@@ -36,21 +32,8 @@ $tempsAnim: 3s;
     }
 }
 
-
 .bd-m{
     min-height: 100vh;
-}
-
-.hamb-index{
-    display: none;
-    z-index: 999;
-    position: absolute;
-    top: .2rem;
-    right: 7%;
-    height: 2rem;
-    aspect-ratio: 1 / 1;
-    background-image: url(/src/media/hamb_menu.ico);
-    background-size: cover;
 }
 
 .cover-fons{
@@ -78,100 +61,6 @@ $tempsAnim: 3s;
     .text-index{
         width: 100%;
         height: 100%;
-    }
-
-    .menu-dret{
-        background-color: #fff;
-        width: 30%;
-        height: 100%;
-        display:flex;
-        align-items:center;
-        z-index:1;
-        transition: .3s;
-
-        ul{
-            width: 100%;
-
-            li{
-                color: $bg-color;
-                box-sizing: border-box;
-                text-transform: uppercase;
-                align-items: center;
-                width: 100%;
-                height: 4rem;
-                font-size: .7rem;
-                font-weight: bold;
-                display: flex;
-                position: relative;
-
-                &:not(:last-child){
-                    border-bottom: solid 1px #d2d2d2;
-                }
-
-                img{
-                    height:70%;
-                    aspect-ratio: 1;
-                    border-radius:50%;
-                    filter:grayscale(1);
-                    opacity: .5;
-                    margin-right:.3rem;
-                }
-
-                &:not(:first-child):hover{
-                    border-top: solid 3px $color-fargo;
-                    border-bottom: solid 3px $color-fargo;
-                    background-color: #dee1ea10;
-                    color: #000;
-
-                    img{
-                        opacity: 1;
-                    }
-                }
-
-                a{
-                    color: #aaa;
-                    box-sizing: border-box;
-                    text-transform: uppercase;
-                    letter-spacing: .1rem;
-                    align-items: center;
-                    width: 100%;
-                    height: 4rem;
-                    padding-top: 0.2rem;
-                    padding-bottom: 0.2rem;
-                    padding-left: 1rem;
-                    font-size: .7rem;
-                    font-weight: bold;
-                    display: flex;
-                    position: relative;
-                    &:hover{
-                        color:#000;
-                    }
-                }
-            }
-            
-            .detall{
-                justify-content: flex-start;
-                padding-left: 1rem;
-            }
-
-            div.detall{
-                display: flex;
-                margin-left: 1.5rem;
-                margin-top: 2rem;
-            }
-
-            div.detall div{
-                filter: grayscale(.8);
-                &:hover{
-                    filter: grayscale(0)
-                }
-            }
-        }
-
-        .fargo-typo-header{
-            padding-bottom: 2rem
-        }
-        
     }
     
     .text-info{
@@ -291,14 +180,7 @@ $tempsAnim: 3s;
     
 }
 
-.logo {
-    background-size: contain;
-    width: 6rem;
-    height: 3rem;
-    background-color: $color-fargo;
-    -webkit-mask: url(/src/media/logo-negre.svg) no-repeat center;
-    mask: url(/src/media/logo-negre.svg) no-repeat center;
-}
+
 
 .cont-logo {
     display: flex;
@@ -332,20 +214,11 @@ $tempsAnim: 3s;
 }
 
 
-.imatge-clip{
-    width: 8rem;
-    height: 8rem;
-    opacity: .9;
-    background-color: $color-fargo;
-
-    clip-path: polygon(44.69% 7.98%, 46% 9.3%, 49.2% 10.4%, 52.5% 10.6%, 55.9% 9.7%, 58.7% 8.3%, 60.2% 8.3%, 62.3% 9.2%, 64.1% 10.6%, 65.3% 12.5%, 65.9% 14.4%, 66% 22.6%, 62.7% 24.1%, 57.6% 25.4%, 51.2% 25.9%, 47.4% 25.6%, 42.8% 24.9%, 39.6% 23.6%, 41.5% 25%, 44.6% 26.1%, 49.8% 26.7%, 55.5% 26.8%, 60.3% 26.1%, 64.7% 24.7%, 66% 24.2%, 68.3% 24%, 73.1% 22.4%, 75.1% 22.1%, 76.2% 22.8%, 76.6% 24.7%, 75.4% 27.3%, 71.8% 30.4%, 66.8% 33.1%, 62.2% 34.7%, 57.4% 35.7%, 52.7% 36.3%, 46.7% 36%, 40.8% 34.6%, 36.6% 33%, 33.4% 31.5%, 37.3% 35.9%, 37.9% 35.5%, 39% 36.9%, 40% 37.5%, 42.5% 40.1%, 44.5% 42.5%, 45.2% 44.2%, 63.3% 63.8%, 62.9% 64.8%, 64% 66.2%, 63.6% 68.2%, 62.6% 67.2%, 64.7% 69.3%, 67.5% 69.6%, 71.9% 74.1%, 76.2% 79%, 78.7% 81.9%, 77.2% 84.9%, 75.6% 86.2%, 69.5% 92.4%, 68.4% 92.6%, 67.5% 91.9%, 57.8% 72.2%, 56.9% 73.1%, 55.4% 73.5%, 52.1% 78.6%, 51.1% 78.9%, 47.2% 76.7%, 46.8% 76%, 47.7% 74.6%, 48.6% 74.5%, 51.1% 70.9%, 51.1% 69.5%, 49.8% 69.2%, 48.6% 67.9%, 47% 65.8%, 47% 64.9%, 45.7% 63.7%, 37.5% 71.1%, 36.1% 70.6%, 34.4% 69.3%, 34.7% 67.4%, 44.8% 57.2%, 41.5% 52.9%, 40.4% 53.3%, 37.7% 58.5%, 35.9% 57.8%, 34.7% 56.9%, 35.2% 56.4%, 36.2% 54.3%, 36.9% 52.1%, 37.4% 48.8%, 31.8% 42.4%, 31.7% 41.3%, 17.5% 25.7%, 15.5% 23.1%, 19.2% 22.6%, 19.9% 23.6%, 24.4% 19.8%, 25.9% 21.4%, 23.3% 26.9%, 25.8% 29.7%, 27.9% 31.1%, 30% 31.1%, 31.6% 30.1%, 27.2% 26.2%, 26.6% 24.1%, 27.3% 22.46%, 29.69% 22.46%, 31.82% 23.12%, 35.5% 24.26%, 37.31% 24.26%, 37.31% 16.66%, 37.1% 14.5%, 37.62% 12.34%, 38.8% 10.6%, 40.5% 9.1%, 42.5% 8.3%);
-}
 
 .clip-cotxe{
     position: absolute;
     max-width: 80%;
     height:auto;
-   // max-width: 1200px;
     left: 10%;
     top:20%;
     transition: .7s;
@@ -353,17 +226,9 @@ $tempsAnim: 3s;
     -webkit-mask-image: var(--svg);
     mask-image: var(--svg);
     mask-repeat: no-repeat;
-    // mask-size:100%;
-    // mask-position:center;
 
     mask-size: 45%;
     mask-position: 48.5% 84%;
-
-    // animation-name: upClipCotxe;
-    // animation-delay: $tempsAnim+1;
-    // animation-duration: 1s;
-    // animation-delay: ($tempsAnim+1s);
-    // animation-fill-mode: forwards;
 }
 
 .clip-home{
@@ -379,17 +244,8 @@ $tempsAnim: 3s;
     -webkit-mask-image: var(--svg);
     mask-image: var(--svg);
     mask-repeat: no-repeat;
-    // mask-size:100%;
-    // mask-position:center;
-
     mask-size: 20.5%;
     mask-position: 49.5% 73%;
-
-    // animation-name: upClipHome;
-    // animation-delay: $tempsAnim+1;
-    // animation-duration: 1s;
-    // animation-delay: ($tempsAnim+1s);
-    // animation-fill-mode: forwards;
 
 }
 
@@ -449,12 +305,6 @@ $tempsAnim: 3s;
         display: block;
     }
 
-    .mostra-i{
-        position: absolute;
-        right: 0;
-        width: 40% !important;
-        display: flex !important;
-    }
     .clip-cotxe{
         mask-position: 53% 89%;
         mask-size: 98.7%;
@@ -473,7 +323,6 @@ $tempsAnim: 3s;
         }
 
         .text-info{
-            //bottom: 0.5rem !important;
             width: 100% !important;
         }
 
@@ -536,19 +385,6 @@ $tempsAnim: 3s;
         width:100% !important;
         top: 40%;
     }
-    }
-
-    
-
-    .hamb-index{
-        display: block;
-    }
-
-    .mostra-i{
-        width: 90% !important;
-        position: absolute;
-        right:0;
-        display: flex !important;
     }
 
     .info-personatge{

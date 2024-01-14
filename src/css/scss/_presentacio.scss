@@ -1,5 +1,5 @@
 .main-pres{
-    width: 100%;
+    width: 100%; 
 }
 
 .cont-true{
@@ -63,30 +63,6 @@
     }
 }
 
-.cover-pres{
-    width: 100%;
-    margin-left: auto;
-    margin-right:auto;
-    height: 30rem;
-    background-image: url(/src/media/cover-ma.jpg);
-    background-size: cover;
-    display:flex;
-    align-items:center;
-    justify-content: center;
-
-    h1{
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        letter-spacing: 5rem;
-        padding-left: 5rem;
-        text-align: center;
-        font-size: 4rem;
-        color: $color-fargo;
-        text-shadow: 0px 0px 5px #fff;
-    }
-}
-
-
 .secc-trailers{
     
     .menu-trailers{
@@ -145,8 +121,7 @@ h3{
 
 .presentacio-ant{
     width: 100%;
-    // background-image: url(/src/media/cover_s4.jpg);
-    // background-size: cover;
+
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
@@ -178,109 +153,11 @@ h3{
     }
 }
 
-.mod-shad{
-    box-shadow: 0 0px 15px #fffac3 !important;
-}
-
-.antag-s4{
-    width: 100%;
-}
-
-.pres-antag{
-    text-align:center;
-    text-transform: uppercase;
-    background-color: #000;
-
-    a{
-        display:block
-    }
-
-    p{
-        font-size: .7rem;
-        line-height: 1rem;
-    }
-
-    .link-ant{
-        width: 10rem;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 1rem;
-        text-align: center;
-        color: $color-fargo;
-        border: solid 2px  $color-fargo;
-        border-radius: 2rem;
-        padding: 0 1rem 0 1rem;
-        font-size: .8rem;
-        line-height: 2rem;
-    }
-}
-
-.menu-ant{
-    text-align: center;
-    margin-top: 3rem;
-
-    ul{
-        justify-content: center;
-        place-items: center;
-        row-gap: 0;
-        margin: 0;
-        grid-template-columns: repeat(auto-fit, 16rem);
-        display: grid;
-
-        li{
-            position: relative;
-            width: 15rem;
-            aspect-ratio: 1/1;
-            background-color: #f1f1f1;
-            margin: .3rem;
-            
-            transition: .2s;
-            box-sizing: border-box;
-        
-            &:hover{
-                bottom: .5rem;
-            }
-
-            a{
-                .malvo{
-                    background-image: url(/src/media/fperfilmalvo.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: .5rem;
-                    filter: grayscale(60%);
-                }
-
-                .milligan{
-                    background-image: url(/src/media/fperfilmilligan.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: .5rem;
-                    filter: grayscale(60%);
-                }
-
-                .varga{
-                    background-image: url(/src/media/fperfilvargas.jpg);
-                    background-position: center;
-                    background-size: cover;
-                    width: 100%;
-                    height: 100%;
-                    border-radius: .5rem;
-                    filter: grayscale(60%);
-                }
-            }
-        }
-    }
-}
-
 .cover-trailer{
     width: 98%;
     margin-left: 1%;
     aspect-ratio: 16/9;
-    background-image: url(/src/media/fargo-s2-llarga.webp?width=144);
+    background-image: url(/src/media/fargo-s2-llarga.webp);
     background-size: cover;
 }
 
