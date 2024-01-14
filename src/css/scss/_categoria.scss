@@ -92,7 +92,7 @@
 @media screen and (min-width: $breakpoint-tablet ) and (max-width: $breakpoint-desktop ){
     
     .cover-ant{
-        background-image: url(/src/media/pont1400.webp?width=992px);
+        background-image: url(/src/media/pont.webp?width=992px);
         h1{
             font-size: 2rem;
             letter-spacing: 3rem;
@@ -131,7 +131,7 @@
 @media screen and (max-width: $breakpoint-tablet){
 
     .cover-ant{
-        background-image: url(/src/media/pont.webp);
+        background-image: url(/src/media/pont.webp?width=500);
         h1{
             font-size: 2rem;
             letter-spacing: 1.5rem;
